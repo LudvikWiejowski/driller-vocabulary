@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" horizontalAlign="left">
+	<mx:Script>
+		<![CDATA[
+			import mx.core.Application;
+		]]>
+	</mx:Script>
+	<mx:Image id="imgFlag" height="24" width="24" source="{data.flag}"/>
+	<mx:Label width="100%" fontWeight="bold" fontSize="12" id="lblCT" text="{data.name}"/>
+</mx:HBox>

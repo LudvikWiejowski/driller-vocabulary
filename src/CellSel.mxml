@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" horizontalAlign="center">
+	<mx:Script>
+		<![CDATA[
+			/*import mx.core.Application;
+			import mx.controls.Alert;*/
+		]]>
+	</mx:Script>
+	<mx:CheckBox id="chkSel" selected="{data.SL=='true'}" change="{data.SL=chkSel.selected}"/>
+</mx:HBox>

@@ -1,0 +1,711 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <showCF>false</showCF>
+  <writemode>false</writemode>
+  <microphone>0</microphone>
+  <path/>
+    <currentlanguage>EN</currentlanguage>
+    <currenttheme>wrinkled paper1</currenttheme>
+    <regemail>
+      
+    </regemail>
+    <regcode>
+      
+    </regcode>
+    <confversion>84</confversion>
+    <pronounce>false
+      
+    </pronounce>
+    <importoption>1</importoption>
+    
+    <columnorder>en;cz;pr;cx</columnorder>
+    <importaccoption>0</importaccoption>
+    <importdelimiteroption>1</importdelimiteroption>
+    <fieldcolor>16777215</fieldcolor>
+    <ct><name>EN</name><buttons><show>Show</show><next>Next</next><save>Save</save><add>New</add><setup>Options</setup><radio1>I KNOW</radio1><radio2>NOT SURE</radio2><radio3>WHAT?!</radio3><add2>Update</add2><addtext>Insert new word</addtext><trayshow>Show</trayshow><trayhide>Hide</trayhide><traypause>Pause</traypause><trayexit>Exit</trayexit><nextskip>Next Now</nextskip></buttons><grid><col1>Word</col1><col2>Translation</col2><col3>Pronunciation</col3><col4>Context</col4></grid><settings><title>Settings</title><file>Current file</file><interval>Interval (sec)</interval><random>Random</random><swap>Swap</swap><language>Language</language><newfile>New</newfile><opt1>Semicolon</opt1><opt2>Tab</opt2><opt3>Comma</opt3><opt4>Custom</opt4><order1>Foreign word</order1><order2>Translation</order2><order3>Pronunciation</order3><order4>Context</order4><importfile/><imptext1>This separates text files to words and creates vocabulary files with contextual sentences</imptext1><imptext2>Excluded characters (delimited by space):</imptext2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<excluded>
+
+
+
+. , ; : ! ? / \ ( ) [ ]</excluded><importtext/><options1>General options</options1>
+
+<options2>Import External Vocabulary</options2><options3>Import Text</options3><options4>About</options4><abouttext>Visit us on:&lt;br&gt;&lt;a href='http://www.driller-vocabulary.com' target='_blank'&gt;&lt;font color='#4152fb'&gt;www.driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;br&gt;Email to:&lt;br&gt;&lt;a href='mailto:support@driller-vocabulary.com'&gt;&lt;font color='#4152fb'&gt;support@driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;/b&gt;</abouttext><aboutemail>Registr. email:</aboutemail><aboutcode>Registr. code:</aboutcode><showcf>Show evaluation column</showcf><options5>Google Translate</options5><translatedescription>Translation via on-line Google Translate tool. Choose from which language to which language to translate. When adding or editting a word, press green side button of translation field, translation will be made.</translatedescription><translatefrom>From</translatefrom><translateto>To</translateto><swaprnd>Swap randomly</swaprnd><writemode>Write mode</writemode><pronounce>Pronounce displayed word</pronounce>
+
+
+
+
+
+
+
+
+
+
+
+
+<options7>Import Predefined Vocabulary</options7><importoption1>Create new file only</importoption1><importoption2>Create new file &amp; open in Driller</importoption2><importoption3>Append to active file</importoption3></settings><tooltips>
+
+<show>(F4)</show><next>(F5)</next><save>Save word changes (F6)</save><add>(F7)</add><setup>(F8)</setup><radio1>(F1)</radio1><radio2>(F2)</radio2><radio3>(F3)</radio3><colorpicker>Choose color of your word and press Save button</colorpicker><text1/><text2/><text3>Pronunciation</text3><text4>Context</text4><maximize>Maximize</maximize><close>Quit app (F12)</close><showlist>Show vocabulary list (F9)</showlist><hidelist>Hide vocabulary list (F9)</hidelist><file/><filebutton>
+
+Select vocabulary file</filebutton>
+<interval/><random/><swap/><language/><newfile>Creates new file</newfile><showstorage>Open vocabulary folder</showstorage><listorder>Set order of your file (drag&amp;drop)</listorder><custom>Define your delimiter here</custom><importfile/><excluded>Characters to be excluded from imported text</excluded><importtext/><aboutemail>Enter your registration email</aboutemail><aboutcode>Enter your registration code</aboutcode><eval>Show evaluation column words</eval><clsbutton>Save &amp; Close</clsbutton><nextskip>Next word without interval (F10)</nextskip><ipa>IPA</ipa><translate>Google Translate</translate><print>Print cards</print><printselect>Select/Deselect all</printselect><swaprnd/><mp3>Creates sound files of selected words for your mp3 player.</mp3><translateall>Translates all selected words</translateall><voice>(F11)</voice><write>Write mode - write translation</write><record>Press and hold to record your voice. Release to stop recording.</record>
+
+
+<replay>Play your recorder voice</replay>
+<bulb>(Enter) Press or hit Enter for evaluation</bulb><writeclose>(Esc) Close write mode</writeclose><exporttxt>Exports selected words to txt format.</exporttxt><importtxt>Imports vocabulary from external sources.</importtxt><fieldcolor>Sets background color of fields.</fieldcolor><videostream>Play videos with subtitles.</videostream><videoimport>Import selected words. If no selection made, all words will be imported.</videoimport></tooltips><alerts><alert1>Changes have been saved...</alert1><alert2>Conf changes have been saved...</alert2>
+
+
+<alert3>Do you want to quit application?</alert3>
+
+<alert4>Enter word</alert4><alert5>Enter translation</alert5><alert6>word already exists!</alert6><alert7>Do you really want to delete word</alert7><alert8>File has been created</alert8><alert9>Please, define custom delimiter</alert9><alert10>Do you want to put translation for all selected words?</alert10><alert11>To create sound vocabulary files both, word and translation must be filled in. For word only, translation is not neccessary.</alert11></alerts><flag>assets/icons/en.png</flag></ct><ct><name>CZ</name><buttons><show>Ukázat</show><next>Dále</next><save>Uložit</save><add>Nový</add><setup>Volby</setup><radio1>VÍM</radio1><radio2>NEJISTÝ</radio2><radio3>COŽE?!</radio3><add2>Editovat</add2><addtext>Nové slovo</addtext><trayshow>Zobrazit</trayshow><trayhide>Skrýt</trayhide><traypause>Pauza</traypause><trayexit>Ukončit</trayexit>
+<nextskip>Dále Now</nextskip></buttons><grid><col1>Slovo</col1><col2>Překlad</col2><col3>Výslovnost</col3><col4>Kontext</col4></grid><settings><title>Nastavení</title><file>Soubor</file><interval>Interval</interval><random>Náhodně</random><swap>Přehodit</swap><language>Jazyk</language><newfile>Nový</newfile><opt1>Středník</opt1><opt2>Tab</opt2><opt3>Čárka</opt3><opt4>Vlastní</opt4>
+<order1>Cizí slovíčko</order1><order2>Překlad</order2><order3>Výslovnost</order3><order4>Kontext</order4>
+<importfile/><imptext1>Text rozdělí na jednotlivá slova a ta načte i s kontextovýma větama</imptext1><imptext2>Eliminace znaků (oddělovat mezerou):</imptext2><excluded>. , ; : ! ? / \ ( ) [ ]</excluded><importtext/><options1>Hlavní</options1>
+<options2>Načíst externí soubor slovíček</options2><options3>Načíst textový soubor</options3><options4>O aplikaci</options4><abouttext>Koupit na:&lt;br&gt;&lt;a href='http://www.driller-vocabulary.com' target='_blank'&gt;&lt;font color='#4152fb'&gt;www.driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;br&gt;Email to:&lt;br&gt;&lt;a href='mailto:support@driller-vocabulary.com'&gt;&lt;font color='#4152fb'&gt;support@driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;/b&gt;</abouttext><aboutemail>Reistr. email:</aboutemail><aboutcode>Registr. kód:</aboutcode><showcf>Zobrazit sloupec ohodnocení</showcf><options5>Google Translate</options5><translatedescription>Překlad on-line nástrojem Google Translate. Vyberte z kterého do kterého jazyka překládat. Při přidávání nebo úpravě slovíčka stiskněte postranní zelené tlačítko překladového pole, překlad bude proveden.</translatedescription><translatefrom>Z</translatefrom><translateto>Do</translateto><swaprnd>Přehazovat náhodně</swaprnd><writemode>Psací mód</writemode><pronounce>
+
+
+
+
+
+
+
+
+
+
+
+
+Výslovnost u zobrazeného slovíčka</pronounce><options7>Načíst z předdefinovaných slovíček</options7><importoption1>Vytvořit pouze nový soubor</importoption1><importoption2>Vytvořit nový soubor &amp; otevřít v aplikaci</importoption2><importoption3>Přidat slovíčka do aktivního souboru</importoption3></settings>
+
+<tooltips><show>(F4)</show><next>(F5)</next><save>Uložit změny (F6)</save><add>(F7)</add><setup>(F8)</setup><radio1>(F1)</radio1><radio2>(F2)</radio2><radio3>(F3)</radio3><colorpicker>Vyberte barvu a uložte tlačítkem Uložit</colorpicker><text1/><text2/><text3>Výslovnost</text3><text4>
+Kontext</text4><maximize>Zvětšit</maximize><close>Ukončit (F12)</close><showlist>Ukázat seznam slovíček (F9)</showlist>
+
+<hidelist>Skrýt seznam slovíček (F9)</hidelist><file/><filebutton>Vybere soubor slovíček</filebutton><interval/><random/><swap/><language/><newfile>Vytvoří nový, prázdný soubor</newfile><showstorage>Otevře složku slovíček</showstorage><listorder>Nastaví pořadí polí (drag&amp;drop)</listorder><custom>Definuje vlastní oddělovač</custom><importfile>Importuje soubor slovíček</importfile><excluded>Znaky, které budou z textu eliminovány</excluded><importtext/><aboutemail>Prosím, vložte Váš email</aboutemail><aboutcode>Prosím, vložte obdržený registrační kód</aboutcode><eval>Zobrazí sloupec aktuálního ohodnocení slovíčka</eval><clsbutton>Uložit &amp; Zavřít</clsbutton><nextskip>Přesun na další slovíčko bez ohledu na interval. (F10)</nextskip><ipa>IPA</ipa><translate>Google Translate</translate><print>Tisk kartiček</print><printselect>Označit/Zrušit vše</printselect><swaprnd/><mp3>Z vybraných slovíček vytvoří zvukové soubory pro mp3 přehrávač.</mp3><translateall>Doplní překlad ke všem označeným slovíčkám</translateall>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<voice>(F11)</voice><write>Psací mód - vepište překlad</write><record>Pro nahrání Vašeho hlasu stiskněte a držte tlačítko. Pro ukončení nahrávání tlačítko uvolněte.</record><replay>Přehrát nahraný hlas.</replay><bulb>(Enter) Vyhodnotí překlad</bulb><writeclose>(Esc) Uzavřít psací mód</writeclose><exporttxt>Uloží vybraná slovíčka do txt souboru.</exporttxt><importtxt>Načte slovíčka z externího zdroje.</importtxt><fieldcolor>Nastaví barvu pozadí textových polí.</fieldcolor><videostream>Přehrát videa s titulkama.</videostream><videoimport>Importovat označená slovíčka. Není-li žádné slovíčko označeno, bude importováno vše.</videoimport></tooltips><alerts><alert1>Změny byly uloženy...</alert1><alert2>Změny v konfiguraci byly uloženy...</alert2><alert3>Přejete si ukončit aplikaci?</alert3>
+
+<alert4>Vložte slovo prosím</alert4><alert5>Vložte překlad prosím</alert5><alert6>slovíčko již existuje!</alert6><alert7>Přejete si smazat slovíčko</alert7><alert8>Soubor byl vytvořen</alert8><alert9>Zadejte prosím vlastní oddělovač</alert9><alert10>Přejete si vložit překlad pro všechna označená slovíčka?</alert10><alert11>Pro vytvoření zvukových souborů slovíček je nutné mít vyplěno slovíčko i překlad. Pro volbu "Word only" není překlad nutný.</alert11></alerts><flag>assets/icons/cz.png</flag></ct>
+
+<ct><name>SK</name><buttons><show>Ukažte</show><next>Ďalej</next><save>Uložte</save><add>Nový</add><setup>Voľby</setup><radio1>VIEM</radio1><radio2>NEISTÝ</radio2><radio3>ČOŽE?!</radio3><add2>Editovať</add2><addtext>Nové slovo</addtext><trayshow>Zobraziť</trayshow><trayhide>Skryť</trayhide><traypause>Pauza</traypause><trayexit>Ukončiť</trayexit>
+<nextskip>Ďalej Now</nextskip></buttons><grid><col1>Slovo</col1><col2>Preklad</col2><col3>Výslovnosť</col3><col4>Kontext</col4></grid><settings><title>Nastavenie</title><file>Súbor</file><interval>Interval (sec)</interval><random>Náhodne</random><swap>Vymeniť</swap><language>Jazyk</language><newfile>Nový</newfile><opt1>Bodkočiarka</opt1><opt2>Tab</opt2><opt3>Čiarka</opt3><opt4>Vlastné</opt4>
+<order1>Cudzie slovíčko</order1><order2>Preklad</order2><order3>Výslovnosť</order3><order4>Kontext</order4>
+<importfile/><imptext1>Text rozdelí na jednotlivé slová a tie načíta aj s kontextovými vetami</imptext1><imptext2>Eliminácia znakov (oddelovať medzerou):</imptext2><excluded>. , ; : ! ? / \ ( ) [ ]</excluded><importtext/><options1>Hlavné</options1>
+<options2>Načítať externý súbor slovíčok</options2><options3>Načítať textový súbor</options3><options4>O aplikacií</options4><abouttext>Kúpit na:&lt;br&gt;&lt;a href='http://www.driller-vocabulary.com' target='_blank'&gt;&lt;font color='#4152fb'&gt;www.driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;br&gt;Email na:&lt;br&gt;&lt;a href='mailto:support@driller-vocabulary.com'&gt;&lt;font color='#4152fb'&gt;support@driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;/b&gt;</abouttext><aboutemail>Reistr. email:</aboutemail><aboutcode>Registr. kód:</aboutcode><showcf>Zobraziť stĺpec ohodnotenia</showcf><options5>Google Translate</options5><translatedescription>Preklad on-line nástrojom Google Translate. Vyberte, z ktorého do ktorého jazyka prekladať. Pri pridávaní alebo úprave slovíčka stlačte postranné zelené tlačítko prekladového poľa, preklad bude vykonaný.</translatedescription><translatefrom>Z</translatefrom><translateto>Do</translateto><swaprnd>Vymeniť náhodne</swaprnd><writemode>Psací mód</writemode><pronounce>
+
+
+
+
+
+
+
+
+
+
+
+
+Výslovnosť zobrazeného slovíčka</pronounce><options7>Načítať z preddefinovaných slovíčok</options7><importoption1>Vytvoriť iba nový súbor</importoption1><importoption2>Vytvoriť nový súbor &amp; otvoriť v aplikácii</importoption2><importoption3>Pridať do aktivného súboru</importoption3></settings>
+
+<tooltips><show>(F4)</show><next>(F5)</next><save>Uložiť zmeny (F6)</save><add>(F7)</add><setup>(F8)</setup><radio1>(F1)</radio1><radio2>(F2)</radio2><radio3>(F3)</radio3><colorpicker>Vyber farbu a ulož tlačitkom Uložiť</colorpicker><text1/><text2/><text3>Výslovnosť</text3><text4>
+Kontext</text4><maximize>Zväčšiť</maximize><close>Ukončiť (F12)</close><showlist>Ukázať zoznam slovíčok (F9)</showlist>
+
+<hidelist>Skrýť zoznam slovíčok (F9)</hidelist><file/><filebutton>Vyberie súbor slovíčok</filebutton><interval/><random/><swap/><language/><newfile>Vytvorí nový, prázdny súbor</newfile><showstorage>Otvoriť zložku slovíčok</showstorage><listorder>Nastaví poradie polí (drag&amp;drop)</listorder><custom>Definuje vlastný oddelovač</custom><importfile>Importuje súbor slovíčok</importfile><excluded>Znaky, ktoré budú z textu eliminované</excluded><importtext/><aboutemail>Prosím vložte Váš email</aboutemail><aboutcode>Prosím, vložte obdržaný registračný kód</aboutcode><eval>Zobrazí stĺpec aktuálneho ohodnotenia slovíčka</eval><clsbutton>Uložiť &amp; Zavrieť</clsbutton><nextskip>Presun na ďaľší slovíčko bez ohľadu na interval. (F10)</nextskip><ipa>IPA</ipa><translate>Google Translate</translate><print>Vytlačiť kartičky</print><printselect>Označiť/Zrušiť vše</printselect><swaprnd/><mp3>Z vybraných slovíčok vytvorí zvukové súbory pre mp3 player.</mp3><translateall>Doplní preklad ku všem označným slovíčkám</translateall>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<voice>(F11)</voice><write>Psací mód - vepište preklad</write><record>Pro nahrání hlasu stisknete a držte. Uvoněním tlačítka sa nahrávání ukončí.</record><replay>Prehrať nahratý hlas</replay><bulb>(Enter) Vyhodnotí preklad</bulb><writeclose>(Esc) Uzavre psací mód</writeclose><exporttxt>Vybraná slovíčka uloží do txt súboru.</exporttxt><importtxt>Načte slovíčka z externého zdroja.</importtxt><fieldcolor>Nastaví farbu pozadia textových polí.</fieldcolor><videostream>Prehrať videa s titulkama.</videostream><videoimport>Importovať označená slovíčka. Ak nie je žiadne slovíčko označené, bude importované všetko.</videoimport></tooltips><alerts><alert1>Zmeny boli uložené...</alert1><alert2>Zmeny v konfiguracií boli uložené...</alert2><alert3>Prajete si ukončiť aplikáciu?</alert3>
+
+<alert4>Vložte slovo prosím</alert4><alert5>Vložte preklad prosím</alert5><alert6>slovíčko už existuje!</alert6><alert7>Prajete si zmazať slovíčko</alert7><alert8>Súbor bol vytvorený</alert8><alert9>Zadaj prosím vlastný oddelovač</alert9><alert10>Prajete si preložit všetky označené slovíčka?</alert10><alert11>Pre vytvorenie zvukových súborov slovíčok je nutné mať vyplnené slovíčko aj preklad. Pre voľbu "Word only" nie je preklad nutný.</alert11></alerts><flag>assets/icons/sk.png</flag></ct>
+<ct>
+  <name>DE</name>
+  <buttons>
+    <show>Zeigen</show>
+    <next>Weiter</next>
+    <save>Speichern</save>
+    <add>Neu</add>
+    <setup>Optionen</setup>
+    <radio1>SICHER</radio1>
+    <radio2>UNSICHER</radio2>
+    <radio3>WAS?!</radio3>
+    <add2>Aktualisieren</add2>
+    <addtext>Neues Wort einfügen</addtext>
+    <trayshow>Zeigen</trayshow>
+    <trayhide>Verstecken</trayhide>
+    <traypause>Pause</traypause>
+    <trayexit>Ende</trayexit>
+    <nextskip>Jetz Weiter</nextskip>
+  </buttons>
+  <grid>
+    <col1>Wort</col1>
+    <col2>Übersetzung</col2>
+    <col3>Aussprache</col3>
+    <col4>Kontext</col4>
+  </grid>
+  <settings>
+    <title>Einstellungen</title>
+    <file>Aktuelle Datei</file>
+    <interval>Interval (Sek.)</interval>
+    <random>Zufall</random>
+    <swap>Tauschen</swap>
+    <language>Sprache</language>
+    <newfile>Neu</newfile>
+    <opt1>Strichpunkt</opt1>
+    <opt2>Tabulator</opt2>
+    <opt3>Beistrich</opt3>
+    <opt4>Individuell</opt4>
+    <order1>Fremdwort</order1>
+    <order2>Übersetzung</order2>
+    <order3>Aussprache</order3>
+    <order4>Kontext</order4>
+    <importfile>Datei importieren</importfile>
+    <imptext1>Hiermit können Sie den Text in einzelne Wörter teilen und Sätze mit diesen Wörtern erstellen.</imptext1>
+    <imptext2>Ausgeschlossene Zeichen (getrennt durch Leerzeichen)</imptext2>
+    <excluded>
+
+
+
+. , ; : ! ? / \ ( ) [ ]</excluded>
+    <importtext>Textfile importieren</importtext>
+    <options1>Allgemeine Optionen</options1>
+    <options2>Externe Vokabeln importieren</options2>
+    <options3>Textfile importieren</options3>
+    <options4>Info</options4>
+    <abouttext>Besuchen sie uns auf:&lt;br&gt;&lt;a href='http://www.driller-vocabulary.com' target='_blank'&gt;&lt;font color='#4152fb'&gt;www.driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;br&gt;Email an:&lt;br&gt;&lt;a href='mailto:support@driller-vocabulary.com'&gt;&lt;font color='#4152fb'&gt;support@driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;/b&gt;</abouttext>
+    <aboutemail>Registr. email:</aboutemail>
+    <aboutcode>Registr. code:</aboutcode>
+    <showcf>Spalte der Beurteilung</showcf>
+    <options5>Google Translate</options5>
+    <translatedescription>Übersetzung via on-line Google Übersetzungs Tool. Wählen Sie von welcher auf welche Sprache sie übersetzen möchten. Wenn Sie ein Wort dazufügen oder bearbeiten, drücken Sie den grünen button vom Übersetzungsfeld, Übersetzung erfolgt dann.</translatedescription>
+    <translatefrom>Von</translatefrom>
+    <translateto>Auf</translateto>
+    <swaprnd>Tauschen zufällig</swaprnd>
+  <writemode>Schreib-Modus</writemode><pronounce>Aussprache des angezeigten wortes</pronounce><options7>Import des vordefinierten Wortschatzes</options7><importoption1>Neue Datei erstellen</importoption1><importoption2>Neue Datei erstellen und in Driller öffnen</importoption2><importoption3>in die Datei hinzufügen</importoption3></settings>
+  <tooltips>
+    <show>(F4)</show>
+    <next>(F5)</next>
+    <save>Wortänderungen speichern (F6)</save>
+    <add>(F7)</add>
+    <setup>(F8)</setup>
+    <radio1>(F1)</radio1>
+    <radio2>(F2)</radio2>
+    <radio3>(F3)</radio3>
+    <colorpicker>Wählen Sie die Farbe der Wörter und betätigen sie die Speichertaste.</colorpicker>
+    <text1/>
+    <text2/>
+    <text3>Aussprache</text3>
+    <text4>Kontext</text4>
+    <maximize>Maximieren</maximize>
+    <close>Anwendung beenden (F12)</close>
+    <showlist>Vokabelliste anzeigen (F9)</showlist>
+    <hidelist>Vokabelliste verstecken (F9)</hidelist>
+    <file/>
+    <filebutton>Vokabeldatei auswählen</filebutton>
+    <interval/>
+    <random/>
+    <swap/>
+    <language/>
+    <newfile>Neue Datei erstellen</newfile>
+    <showstorage>Vokabeldatei öffnen</showstorage>
+    <listorder>Reihenfolge d. files bestimmen (drag&amp;drop)</listorder>
+    <custom>Definieren sie Ihre Trennzeichen hier</custom>
+    <importfile>Importieren Sie Ihre Vokabeln</importfile>
+    <excluded>Zeichen vom importierten Text die zu ignorieren sind</excluded>
+    <importtext/>
+    <aboutemail>Bitte geben Sie Ihre Registrationsemail ein:</aboutemail>
+    <aboutcode>Bitte geben Sie Ihren Registrierungscode ein:</aboutcode>
+    <eval>Zeige Auswertungs Spalte mit Wörtern</eval>
+    <clsbutton>Speichern &amp; schließen</clsbutton>
+    <nextskip>Gehe zum nächsten Wort, unabhängig vom Interval (F10)</nextskip>
+    <ipa>IPA</ipa>
+    <translate>Google Translate</translate>
+    <print>Karten drucken</print>
+    <printselect>Selektiere/deselektiere alles</printselect>
+    <swaprnd/>
+  <mp3>von der ausgewählten Wörtern eine Audiodatei für MP3-Player erstellen</mp3><translateall>alle ausgewählten Wörter übersetzen</translateall><voice>(F11)</voice><write>Schreibmodus - Übersetzung schreiben</write><record>Um ihre Stimme aufzunehmen, Taste  drücken und halten. Nach Freigabe der Taste wird die Aufnahme gestoppt. </record><replay>Meine Aufnahmen abspielen</replay><bulb>(Enter) Für Evaluation  Enter-Taste drücken</bulb><writeclose>(Esc) Schreibmodus schließen</writeclose><exporttxt>Ausgewählte Wörter ins Txt-Format exportieren </exporttxt><importtxt>Vokabeln von den externen Quellen importieren</importtxt><fieldcolor>Hintergrundfarbe der Felder stellen</fieldcolor><videostream>Video mit Untertiteln abspielen</videostream><videoimport>Ausgewählte Wörter importieren. Falls Sie keine Wörter auswählen, werden alle Wörter importiert. </videoimport></tooltips>
+  <alerts>
+    <alert1>Änderungen wurden gespeichert…</alert1>
+    <alert2>Kofigurationsänderungen wurden gespeichert…</alert2>
+    <alert3>Wollen Sie die Anwendung beenden?</alert3>
+    <alert4>Bitte das Wort eingeben</alert4>
+    <alert5>Bitte die Übersetzung eingeben</alert5>
+    <alert6> - Das Wort existiert bereits!</alert6>
+    <alert7>Wollen Sie das Wort wirklich löschen?</alert7>
+    <alert8>Datei wurde erstellt.</alert8>
+    <alert9>Definiere das individuelle Trennzeichen</alert9>
+  <alert10>Wollen Sie alle ausgewählten Wörter übersetzen? </alert10><alert11>Zur Erstellung einer Audiodatei müssen die Felder "Wort" und "Übersetzung" ausgefüllt werden.  </alert11></alerts>
+  <flag>assets/icons/de.png</flag>
+</ct>
+<ct>
+  <name>RS</name>
+  <buttons>
+    <show>Pokaži</show>
+    <next>Dalje</next>
+    <save>Sačuvaj</save>
+    <add>Novo</add>
+    <setup>Opcije</setup>
+    <radio1>ZNAM</radio1>
+    <radio2>NESIGURNO</radio2>
+    <radio3>ŠTA?!</radio3>
+    <add2>Aktualizirat</add2>
+    <addtext>Dodati novu reč</addtext>
+    <trayshow>Pokaži</trayshow>
+    <trayhide>Sakriti</trayhide>
+    <traypause>Pausa</traypause>
+    <trayexit>Kraj</trayexit>
+    <nextskip>Dalje sada</nextskip>
+  </buttons>
+  <grid>
+    <col1>Reč</col1>
+    <col2>Prevod</col2>
+    <col3>Izgovor</col3>
+    <col4>Kontekst</col4>
+  </grid>
+  <settings>
+    <title>Podešavanja</title>
+    <file>Aktualni fajl</file>
+    <interval>Interval (sek)</interval>
+    <random>Slučaj</random>
+    <swap>Razmena</swap>
+    <language>Jezik</language>
+    <newfile>Novo</newfile>
+    <opt1>Tačka i zapeta</opt1>
+    <opt2>Tabulator</opt2>
+    <opt3>Zarez</opt3>
+    <opt4>Pojedinačno</opt4>
+    <order1>Strana reč</order1>
+    <order2>Prevod</order2>
+    <order3>Izgovor</order3>
+    <order4>Kontekst</order4>
+    <importfile>Importiraj fajl</importfile>
+    <imptext1>Ovde možete da podelite tekst u pojedinačne reči i da kreirate rečenice sa tim rečima.</imptext1>
+    <imptext2>izključena slova (odvojena sa razmakom)</imptext2>
+    <excluded>
+
+
+
+. , ; : ! ? / \ ( ) [ ]</excluded>
+    <importtext>Importiraj tekst fajl</importtext>
+    <options1>Opšte opcije</options1>
+    <options2>Importiraj eksterne reči</options2>
+    <options3>Importiraj tekst</options3>
+    <options4>Informacje</options4>
+    <abouttext>VPodsetite nas na:&lt;br&gt;&lt;a href='http://www.driller-vocabulary.com' target='_blank'&gt;&lt;font color='#4152fb'&gt;www.driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;br&gt;Email:&lt;br&gt;&lt;a href='mailto:support@driller-vocabulary.com'&gt;&lt;font color='#4152fb'&gt;support@driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;/b&gt;</abouttext>
+    <aboutemail>Email za regist.</aboutemail>
+    <aboutcode>Code za regist.</aboutcode>
+    <showcf>Kolona ocene</showcf>
+    <options5>Google Translate</options5>
+    <translatedescription>Prevod pomoću on-line Google Translate. Izaberi te sa kojeg na koji jezik želite da prevodite.
+Kad dodate ili upišete reč, kliknite na zeleni znak da bi reč preveli.</translatedescription>
+    <translatefrom>Sa</translatefrom>
+    <translateto>Na</translateto>
+    <swaprnd>Razmena slučaj</swaprnd>
+  <writemode>Write mode</writemode><pronounce>Pronounce displayed word</pronounce><options7>Import Predefined Vocabulary</options7><importoption1>Create new file only</importoption1><importoption2>Create new file &amp; open in Driller</importoption2><importoption3>Append to active file</importoption3></settings>
+  <tooltips>
+    <show>(F4)</show>
+    <next>(F5)</next>
+    <save>Promenjene reči sačuvati (F6)</save>
+    <add>(F7)</add>
+    <setup>(F8)</setup>
+    <radio1>(F1)</radio1>
+    <radio2>(F2)</radio2>
+    <radio3>(F3)</radio3>
+    <colorpicker>Izaberite boju reči i kliknite na sačuvati.</colorpicker>
+    <text1/>
+    <text2/>
+    <text3>Izgovor</text3>
+    <text4>Kontekst</text4>
+    <maximize>Uvećaj</maximize>
+    <close>Završiti aplikaciju (F12)</close>
+    <showlist>Pokaži listu reči (F9)</showlist>
+    <hidelist>Sakri listu reči (F9)</hidelist>
+    <file/>
+    <filebutton>Izaberi fajl sa rečima</filebutton>
+    <interval/>
+    <random/>
+    <swap/>
+    <language/>
+    <newfile>Kreirati novi fajl</newfile>
+    <showstorage>Otvorite fajl sa rečima</showstorage>
+    <listorder>Izaberite redosled fajlova (drag&amp;drop)</listorder>
+    <custom>Definišite separatore ovde</custom>
+    <importfile>Importirajte reči</importfile>
+    <excluded>Slova importiranog teksta koja trebaju da se ignorišu</excluded>
+    <importtext/>
+    <aboutemail>Molim vas unesite vaš email za registraciju:</aboutemail>
+    <aboutcode>Molim vas unesite vaš code za registraciju:</aboutcode>
+    <eval>Pokaži kolonu ocjene sa rečima</eval>
+    <clsbutton>Sačuvaj i zatvori</clsbutton>
+    <nextskip>Idi na sledeću reč, nebitno od intervala (F10)</nextskip>
+    <ipa>IPA</ipa>
+    <translate>Google Translate</translate>
+    <print>Štampajte kartu</print>
+    <printselect>Selektiraj/deselektiraj sve</printselect>
+    <swaprnd/>
+  <mp3>Creates sound files of selected words for your mp3 player.</mp3><translateall>Translates all selected words</translateall><voice>(F11)</voice><write>Write mode - write translation</write><record>Press and hold to record your voice. Release to stop recording.</record><replay>Play your recorder voice</replay><bulb>(Enter) Press or hit Enter for evaluation</bulb><writeclose>(Esc) Close write mode</writeclose><exporttxt>Exports selected words to txt format.</exporttxt><importtxt>Imports vocabulary from external sources.</importtxt><fieldcolor>Sets background color of fields.</fieldcolor><videostream>Play videos with subtitles.</videostream><videoimport>Import selected words. If no selection made, all words will be imported.</videoimport></tooltips>
+  <alerts>
+    <alert1>Promene su sačuvane...</alert1>
+    <alert2>Promene konfiguracije su sačuvane...</alert2>
+    <alert3>Hoćete da završite aplikaciju?</alert3>
+    <alert4>Unesite reč</alert4>
+    <alert5>Unesite prevod</alert5>
+    <alert6>reč postoji već!</alert6>
+    <alert7>Hoćete sigurno da izbrišete reč?</alert7>
+    <alert8>Fajl je kreiran</alert8>
+    <alert9>Definišite individualne separatore ovde</alert9>
+  <alert10>Do you want to put translation for all selected words?</alert10><alert11>To create sound vocabulary files both, word and translation must be filled in. For word only, translation is not neccessary.</alert11></alerts>
+  <flag>assets/icons/rs.png</flag>
+</ct>
+<ct>
+  <name>FR</name>
+  <buttons>
+    <show>Montrer</show>
+    <next>Suivant</next>
+    <save>Enregistrer</save>
+    <add>Nouveau</add>
+    <setup>Options</setup>
+    <radio1>JE SAIS</radio1>
+    <radio2>PAS SÛR</radio2>
+    <radio3>QUOI ?</radio3>
+    <add2>Modifier</add2>
+    <addtext>Insérer un nouveau mot</addtext>
+    <trayshow>Montrer</trayshow>
+    <trayhide>Cacher</trayhide>
+    <traypause>Pause</traypause>
+    <trayexit>Terminer</trayexit>
+    <nextskip>Suivant Now</nextskip>
+  </buttons>
+  <grid>
+    <col1>Mot</col1>
+    <col2>Traduction</col2>
+    <col3>Prononciation</col3>
+    <col4>Contexte</col4>
+  </grid>
+  <settings>
+    <title>Réglages</title>
+    <file>Fichier actuel</file>
+    <interval>Période (sec)</interval>
+    <random>Aléatoire</random>
+    <swap>Permuter</swap>
+    <language>Langue</language>
+    <newfile>Nouveau</newfile>
+    <opt1>Point-virgule</opt1>
+    <opt2>Tab</opt2>
+    <opt3>Virgule</opt3>
+    <opt4>Mon propre</opt4>
+    <order1>Mot étranger</order1>
+    <order2>Traduction</order2>
+    <order3>Prononciation</order3>
+    <order4>Contexte</order4>
+    <importfile>Importer un fichier</importfile>
+    <imptext1>Couper le texte mot par mot et créer les fichiers de vocabulaire avec les phrases de contexte.</imptext1>
+    <imptext2>Caractères à éliminer (séparer par un espace)</imptext2>
+    <excluded>
+
+
+
+. , ; : ! ? / \ ( ) [ ]</excluded>
+    <importtext>Importer un fichier texte</importtext>
+    <options1>Options générales</options1>
+    <options2>Importer une liste de mots externes</options2>
+    <options3>Importer un fichier texte</options3>
+    <options4>Info</options4>
+    <abouttext>Nous visiter sur:&lt;br&gt;&lt;a href='http://www.driller-vocabulary.com' target='_blank'&gt;&lt;font color='#4152fb'&gt;www.driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;br&gt;Envoyer un message à:&lt;br&gt;&lt;a href='mailto:support@driller-vocabulary.com'&gt;&lt;font color='#4152fb'&gt;support@driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;/b&gt;</abouttext>
+    <aboutemail>E-mail d'autorisat.:</aboutemail>
+    <aboutcode>Code d'autorisat.:</aboutcode>
+    <showcf>Montrer la colonne avec l'évaluation.</showcf>
+    <options5>Google Translate</options5>
+    <translatedescription>Traduction en ligne avec Google Translate Tool. Sélectionnez les langues entre lesquelles vous sauhaitez traduire.</translatedescription>
+    <translatefrom>De</translatefrom>
+    <translateto>A</translateto>
+    <swaprnd>Permuter au hazard</swaprnd>
+  <writemode>Rédiger le mode</writemode><pronounce>Affichées prononcer mot</pronounce><options7>Importer vocabulaire prédéfini</options7><importoption1>Créer un nouveau fichier ne</importoption1><importoption2>Créer un nouveau fichier et ouvert dans Driller</importoption2><importoption3>Ajouter au fichier actif</importoption3></settings>
+  <tooltips>
+    <show>(F4)</show>
+    <next>(F5)</next>
+    <save>Enregistrer les modifications du mot (F6)</save>
+    <add>(F7)</add>
+    <setup>(F8)</setup>
+    <radio1>(F1)</radio1>
+    <radio2>(F2)</radio2>
+    <radio3>(F3)</radio3>
+    <colorpicker>Choisir la couleur du mot et appuyer sur le bouton Enregistrer</colorpicker>
+    <text1/>
+    <text2/>
+    <text3>Prononciation</text3>
+    <text4>Contexte</text4>
+    <maximize>Agrandir</maximize>
+    <close>Quitter l'application (F12)</close>
+    <showlist>Montrer la liste de vocabulaire (F9)</showlist>
+    <hidelist>Cacher la liste de vocabulaire (F9)</hidelist>
+    <file/>
+    <filebutton>Choisir le fichier de vocabulaire</filebutton>
+    <interval/>
+    <random/>
+    <swap/>
+    <language/>
+    <newfile>Créer un nouveau fichier</newfile>
+    <showstorage>Ouvrir le dossier de vocabulaire</showstorage>
+    <listorder>Spécifier l'ordre des éléments (drag &amp; drop)</listorder>
+    <custom>Définir le caractère séparateur</custom>
+    <importfile>Importer le fichier de vocabulaire</importfile>
+    <excluded>Caractères à éliminer du texte pendant l'importation</excluded>
+    <importtext/>
+    <aboutemail>Insérer l'adresse e-mail d'autorisation</aboutemail>
+    <aboutcode>Insérer le code d'autorisation</aboutcode>
+    <eval>Montrer les mots de la colonne d'évaluation</eval>
+    <clsbutton>Enregistrer et fermer</clsbutton>
+    <nextskip>Mot suivant sans intervalle
+ (F10)</nextskip>
+    <ipa>IPA</ipa>
+    <translate>Google Translate</translate>
+    <print>Imprimer les cartes</print>
+    <printselect>Sélectionner/désélectionner</printselect>
+    <swaprnd/>
+  <mp3>Creates sound files of selected words for your mp3 player.</mp3><translateall>Translates all selected words</translateall><voice>(F11)</voice><write>Write mode - write translation</write><record>Press and hold to record your voice. Release to stop recording.</record><replay>Play your recorder voice</replay><bulb>(Enter) Press or hit Enter for evaluation</bulb><writeclose>(Esc) Close write mode</writeclose><exporttxt>Exports selected words to txt format.</exporttxt><importtxt>Imports vocabulary from external sources.</importtxt><fieldcolor>Sets background color of fields.</fieldcolor><videostream>Play videos with subtitles.</videostream><videoimport>Import selected words. If no selection made, all words will be imported.</videoimport></tooltips>
+  <alerts>
+    <alert1>Les modifications ont été enregistrées...</alert1>
+    <alert2>Les changements de  configuration ont été enregistrés...</alert2>
+    <alert3>Voulez-vous quitter l'application ?</alert3>
+    <alert4>Insérer un mot</alert4>
+    <alert5>Insérer une traduction</alert5>
+    <alert6>ce mot existe déjà</alert6>
+    <alert7>Voulez-vous vraiment effacer le mot ?</alert7>
+    <alert8>Le fichier a été créé</alert8>
+    <alert9>Définir le caractère séparateur.</alert9>
+  <alert10>Do you want to put translation for all selected words?</alert10><alert11>To create sound vocabulary files both, word and translation must be filled in. For word only, translation is not neccessary.</alert11></alerts>
+  <flag>assets/icons/fr.png</flag>
+</ct>
+<ct>
+  <name>KR</name>
+  <buttons>
+    <show>보기</show>
+    <next>다음</next>
+    <save>저장</save>
+    <add>새 단어</add>
+    <setup>옵션</setup>
+    <radio1>알아요</radio1>
+    <radio2>잘 몰라요</radio2>
+    <radio3>몰라요</radio3>
+    <add2>업데이트</add2>
+    <addtext>새 단어 입력</addtext>
+    <trayshow>뜻 보기</trayshow>
+    <trayhide>숨기기</trayhide>
+    <traypause>잠시 멈춤</traypause>
+    <trayexit>나가기</trayexit>
+    <nextskip>다음 Now</nextskip>
+  </buttons>
+  <grid>
+    <col1>단어</col1>
+    <col2>번역</col2>
+    <col3>발음</col3>
+    <col4>내용</col4>
+  </grid>
+  <settings>
+    <title>설정</title>
+    <file>현재 파일</file>
+    <interval>시간 간격 조정</interval>
+    <random>랜덤</random>
+    <swap>한-영</swap>
+    <language>언어 선택</language>
+    <newfile>새 파일</newfile>
+    <opt1>세미콜론</opt1>
+    <opt2>탭</opt2>
+    <opt3>마침표</opt3>
+    <opt4>사용자 설정</opt4>
+    <order1>외국어</order1>
+    <order2>번역</order2>
+    <order3>발음</order3>
+    <order4>내용</order4>
+    <importfile>파일 불러오기</importfile>
+    <imptext1>텍스트를 단어로 나누어 관련 문장이 포함된 단어장을 만듭니다.</imptext1>
+    <imptext2>제외 문자(스페이스바로 범위 정하기)</imptext2>
+    <excluded>
+
+
+
+. , ; : ! ? / \ ( ) [ ]</excluded>
+    <importtext>텍스트 파일 불러오기</importtext>
+    <options1>설정</options1>
+    <options2>외부 단어 가져오기</options2>
+    <options3>외부 텍스트 파일</options3>
+    <options4>About</options4>
+    <abouttext>&lt;a href='http://www.driller-vocabulary.com' target='_blank'&gt;&lt;font color='#4152fb'&gt;www.driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;웹사이트를 방문해주세요.&lt;br&gt;이메일:&lt;br&gt;&lt;a href='mailto:support@driller-vocabulary.com'&gt;&lt;font color='#4152fb'&gt;support@driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;/b&gt;</abouttext>
+    <aboutemail>이메일 주소</aboutemail>
+    <aboutcode>설정 저장</aboutcode>
+    <showcf>단어 평가' 창 단어 보기</showcf>
+    <options5>Google Translate</options5>
+    <translatedescription>이 프로그램은 구글 온라인 번역을 통해 번역됩니다. 번역할 언어를 선택해 주세요. 단어를 추가하거나 수정하시려면 번역창의 녹색 부분을 누르세요.</translatedescription>
+    <translatefrom>부터</translatefrom>
+    <translateto>까지</translateto>
+    <swaprnd>한-영 랜덤</swaprnd>
+  <writemode>Write mode</writemode><pronounce>Pronounce displayed word</pronounce><options7>Import Predefined Vocabulary</options7><importoption1>Create new file only</importoption1><importoption2>Create new file &amp; open in Driller</importoption2><importoption3>Append to active file</importoption3></settings>
+  <tooltips>
+    <show>(F4)</show>
+    <next>(F5)</next>
+    <save>설정 저장 (F6)</save>
+    <add>(F7)</add>
+    <setup>(F8)</setup>
+    <radio1>(F1)</radio1>
+    <radio2>(F2)</radio2>
+    <radio3>(F3)</radio3>
+    <colorpicker>글자색을 지정하고 저장 버튼을 누르세요</colorpicker>
+    <text1/>
+    <text2/>
+    <text3>발음</text3>
+    <text4>내용</text4>
+    <maximize>최대화</maximize>
+    <close>나가기 (F12)</close>
+    <showlist>단어 목록 보기 (F9)</showlist>
+    <hidelist>단어 목록 숨기기 (F9)</hidelist>
+    <file/>
+    <filebutton>단어장 선택</filebutton>
+    <interval/>
+    <random/>
+    <swap/>
+    <language/>
+    <newfile>새 파일 만들기</newfile>
+    <showstorage>단어 폴더 열기</showstorage>
+    <listorder>단어장 순서 지정(마우스로 드래그하여 옮기기)</listorder>
+    <custom>범위 설정</custom>
+    <importfile>단어 가져오기</importfile>
+    <excluded>불러온 텍스트에서 제외할 문자</excluded>
+    <importtext/>
+    <aboutemail>등록할 이메일 주소를 입력하세요</aboutemail>
+    <aboutcode>비밀번호를 입력하세요</aboutcode>
+    <eval>단어 평가' 창 단어 보기</eval>
+    <clsbutton>저장&amp;닫기</clsbutton>
+    <nextskip>Next word without interval (F10)</nextskip>
+    <ipa>IPA</ipa>
+    <translate>Google Translate</translate>
+    <print>단어 카드 출력하기</print>
+    <printselect>인쇄 모든 영역 선택/해제</printselect>
+    <swaprnd/>
+  <mp3>Creates sound files of selected words for your mp3 player.</mp3><translateall>Translates all selected words</translateall><voice>(F11)</voice><write>Write mode - write translation</write><record>Press and hold to record your voice. Release to stop recording.</record><replay>Play your recorder voice</replay><bulb>(Enter) Press or hit Enter for evaluation</bulb><writeclose>(Esc) Close write mode</writeclose><exporttxt>Exports selected words to txt format.</exporttxt><importtxt>Imports vocabulary from external sources.</importtxt><fieldcolor>Sets background color of fields.</fieldcolor><videostream>Play videos with subtitles.</videostream><videoimport>Import selected words. If no selection made, all words will be imported.</videoimport></tooltips>
+  <alerts>
+    <alert1>수정한 내용이 저장되었습니다.</alert1>
+    <alert2>설정 변경한 내용이 저장되었습니다.</alert2>
+    <alert3>그만두시겠습니까?</alert3>
+    <alert4>단어 입력</alert4>
+    <alert5>번역하기</alert5>
+    <alert6>단어가 이미 존재합니다.</alert6>
+    <alert7>선택한 단어를 지우시겠습니까?</alert7>
+    <alert8>새 파일 생성 완료</alert8>
+    <alert9>구분 기호 사용자 정의</alert9>
+  <alert10>Do you want to put translation for all selected words?</alert10><alert11>To create sound vocabulary files both, word and translation must be filled in. For word only, translation is not neccessary.</alert11></alerts>
+  <flag>assets/icons/kr.png</flag>
+</ct>
+<IPA><char>ɑ</char><char>ɐ</char><char>ɒ</char><char>æ</char><char>ɓ</char><char>ʙ</char><char>ß</char><char>ɔ</char><char>ɕ</char><char>ç</char><char>ɗ</char><char>ɖ</char><char>ð</char><char>ʤ</char><char>ə</char><char>ɘ</char><char>ɚ</char><char>ɛ</char><char>ɜ</char><char>ɝ</char><char>ɞ</char><char>ɟ</char><char>ʄ</char><char>g</char><char>ɠ</char><char>ɢ</char><char>ʛ</char><char>ɦ</char><char>ɧ</char><char>ħ</char><char>ɥ</char><char>ʜ</char><char>ɨ</char><char>ɪ</char><char>ʝ</char><char>ɭ</char><char>ɬ</char><char>ɫ</char><char>ɮ</char><char>ʟ</char><char>ɱ</char><char>ɯ</char><char>ɰ</char><char>ŋ</char><char>ɳ</char><char>ɲ</char><char>ɴ</char><char>ø</char><char>ɵ</char><char>ɸ</char><char>θ</char><char>œ</char><char>ɶ</char><char>ʘ</char><char>ɹ</char><char>ɺ</char><char>ɾ</char><char>ɻ</char><char>ʀ</char><char>ʁ</char><char>ɽ</char><char>ʂ</char><char>ʃ</char><char>ʈ</char><char>ʧ</char><char>ʉ</char><char>ʋ</char><char>ʊ</char><char>ʌ</char><char>ɣ</char><char>ɤ</char><char>ʍ</char><char>χ</char>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<char>ʎ</char><char>ʏ</char><char>ʑ</char><char>ʐ</char><char>ʒ</char><char>ʔ</char><char>ʡ</char><char>ʕ</char><char>ʢ</char><char>|</char><char>ǁ</char><char>ǂ</char></IPA><translator>
+<lang><ct>Afrikaans</ct><code>af</code></lang><lang><ct>Albanian</ct><code>sq</code></lang>
+<lang><ct>Arabic</ct><code>ar</code></lang><lang><ct>Belarusian</ct><code>be</code></lang><lang><ct>Bulgarian</ct><code>bg</code></lang><lang><ct>Catalan</ct><code>ca</code></lang><lang><ct>Chinese</ct><code>zh-CN</code></lang><lang><ct>Croatian</ct><code>hr</code></lang><lang><ct>Czech</ct><code>cs</code></lang><lang><ct>Danish</ct><code>da</code></lang>
+<lang><ct>Dutch</ct><code>nl</code></lang><lang><ct>English</ct><code>en</code></lang><lang><ct>Estonian</ct><code>et</code></lang><lang><ct>Filipino</ct><code>tl</code></lang><lang><ct>Finnish</ct><code>fi</code></lang><lang><ct>French</ct><code>fr</code></lang><lang><ct>Galician</ct><code>gl</code></lang><lang><ct>German</ct><code>de</code></lang>
+<lang><ct>Greek</ct><code>el</code></lang><lang><ct>Haitian Creole</ct><code>ht</code></lang><lang><ct>Hebrew</ct><code>iw</code></lang><lang><ct>Hindi</ct><code>hi</code></lang><lang><ct>Hungarian</ct><code>hu</code></lang><lang><ct>Iceland</ct><code>ic</code></lang><lang><ct>Indonesian</ct><code>id</code></lang><lang><ct>Irish</ct><code>ga</code></lang><lang><ct>Italian</ct><code>it</code></lang><lang><ct>Japanese</ct><code>ja</code></lang>
+<lang><ct>Korean</ct><code>ko</code></lang><lang><ct>Latvian</ct><code>lv</code></lang><lang><ct>Lithuanian</ct><code>lt</code></lang><lang><ct>Macedonian</ct><code>mk</code></lang><lang><ct>Malay</ct><code>ms</code></lang><lang><ct>Maltese</ct><code>mt</code></lang><lang><ct>Norwegian</ct><code>no</code></lang><lang><ct>Persian</ct><code>fa</code></lang>
+<lang><ct>Polish</ct><code>pl</code></lang><lang><ct>Portuguese</ct><code>pt</code></lang><lang><ct>Romanian</ct><code>ro</code></lang><lang><ct>Russian</ct><code>ru</code></lang><lang><ct>Serbian</ct><code>sr</code></lang><lang><ct>Slovak</ct><code>sk</code></lang><lang><ct>Slovenian</ct><code>sl</code></lang><lang><ct>Spanish</ct><code>es</code></lang>
+<lang><ct>Swahili</ct><code>sw</code></lang><lang><ct>Swedish</ct><code>sv</code></lang><lang><ct>Thai</ct><code>th</code></lang><lang><ct>Turkish</ct><code>tr</code></lang><lang><ct>Ukrainian</ct><code>uk</code></lang><lang><ct>Vietnamese</ct><code>vi</code></lang><lang><ct>Welsh</ct><code>cy</code></lang><lang><ct>Yiddish</ct><code>yi</code></lang>
+
+
+<ctfrom>en</ctfrom><ctto>cs</ctto>
+
+</translator><hotkeys><key><color>0</color><control>0</control><key>r</key></key><key><color>0</color><control>0</control><key>e</key></key><key><color>0</color><control>0</control><key>s</key></key><key><color>0</color><control>0</control><key>d</key></key><key><color>0</color><control>0</control><key>u</key></key><key><color>0</color><control>0</control><key>v</key></key><key><color>0</color><control>0</control><key>w</key></key><key><color>0</color><control>0</control><key>x</key></key><key><color>0</color><control>0</control><key>y</key></key><key><color>0</color><control>0</control><key>z</key></key></hotkeys><themes><theme><name>wrinkled paper1</name><image>assets/skins/skin_paper.jpg</image><theme_color>0xa8d6d5</theme_color><status_color>blackText</status_color><preview>assets/skins/preview_paper.jpg</preview></theme>
+<theme>
+  <name>wrinkled paper2</name>
+  <image>assets/skins/skin_paper.jpg</image>
+  <theme_color>0x797979</theme_color>
+  <status_color>whiteText</status_color>
+  <preview>assets/skins/preview_paper.jpg</preview>
+</theme>
+<theme><name>pink paper</name><image>assets/skins/skin_paper2.jpg</image><theme_color>0xf5a978</theme_color><status_color>blackText</status_color><preview>assets/skins/preview_paper2.jpg</preview></theme><theme><name>ginkgo paper</name><image>assets/skins/skin_paper3.jpg</image><theme_color>0x99d9a5</theme_color><status_color>blackText</status_color><preview>assets/skins/preview_paper3.jpg</preview></theme><theme><name>celestial paper</name><image>assets/skins/skin_paper4.jpg</image><theme_color>0xb1a0ff</theme_color><status_color>blackText</status_color><preview>assets/skins/preview_paper4.jpg</preview></theme><theme><name>white paper</name><image>assets/skins/skin_paper6.jpg</image><theme_color>0x66ad75</theme_color><status_color>blackText</status_color><preview>assets/skins/preview_paper6.jpg</preview></theme><theme><name>sand</name><image>assets/skins/skin_sand.jpg</image><theme_color>0xaaa879</theme_color><status_color>whiteText</status_color><preview>assets/skins/preview_sand.jpg</preview></theme><theme>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<name>tic tac toe</name><image>assets/skins/skin_squares.jpg</image><theme_color>0x407dd6</theme_color><status_color>whiteText</status_color><preview>assets/skins/preview_squares.jpg</preview></theme><theme><name>stripes</name><image>assets/skins/skin_stripes.jpg</image><theme_color>0x46a7a9</theme_color><status_color>whiteText</status_color><preview>assets/skins/preview_stripes.jpg</preview></theme><theme><name>textile</name><image>assets/skins/skin_textile.jpg</image><theme_color>0xb80000</theme_color><status_color>whiteText</status_color><preview>assets/skins/preview_textile.jpg</preview></theme></themes></root>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="262" height="158" title="New Message" close="fCloseMe()" showCloseButton="true" creationComplete="fInitMessage()" borderColor="{Application.application.mySkinColor}">
+	<mx:Script>
+		<![CDATA[
+			import mx.managers.PopUpManager;
+			import mx.core.Application;
+			
+			private function fInitMessage():void{
+				
+			}
+			private function fCloseMe():void{
+				PopUpManager.removePopUp(this);
+			}
+		]]>
+	</mx:Script>
+	<mx:TextArea x="0" y="0" width="242" height="118" editable="false" id="msg"/>
+</mx:TitleWindow>

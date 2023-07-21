@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" horizontalAlign="center">
+	<mx:Script>
+		<![CDATA[
+			import mx.core.Application;
+			
+			//[Bindable]
+			//public var newWord:String;
+		]]>
+	</mx:Script>
+	<!--<mx:TextInput id="txtWord" text="{data.EN}" creationComplete="{newWord=data.EN}" change="newWord=txtWord.text" width="100%" borderStyle="solid" backgroundAlpha="1.0" height="100%"/>-->
+	<mx:Image source="@Embed(source='assets/b_icons/speaker_black_16.png')" mouseDown="Application.application.fRemoveVoice()" click="Application.application.fPlayVoice(data.EN)" buttonMode="true"/>
+	<!--<mx:Button id="cmdDel" label="Del" click="Application.application.fCellDelete()" buttonMode="true"/>-->
+	<!--<mx:ColorPicker id="cp" selectedColor="{data.CL}" change="{data.CL=cp.selectedColor, Application.application.fSaveXML()}" buttonMode="true"/>-->
+</mx:HBox>

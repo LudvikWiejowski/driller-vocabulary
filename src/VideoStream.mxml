@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:lwc="com.luwi.*" layout="absolute" close="fClose()" width="647" height="394" title="Video" showCloseButton="true" borderColor="{Application.application.mySkinColor}" initialize="fInit()" mouseMove="fShifterMove()" mouseUp="fShifterUp()" backgroundColor="#1A1D22">
+	<mx:HTTPService id="httpVideos" useProxy="false" method="POST" url="{serverURL+'/driller_videos.php'}" fault="{fVideosFault(event)}" result="{fVideosResult(event)}" showBusyCursor="true">
+        <mx:request xmlns="">
+            <action>{"list"}</action>
+            <lang_from>{Application.application.myXMLconf.translator.ctfrom}</lang_from>
+            <lang_to>{Application.application.myXMLconf.translator.ctto}</lang_to>
+        </mx:request>
+	</mx:HTTPService>
+	
+	<mx:Style>
+			.myButtonStyle
+			{
+				skin: ClassReference("mx.skins.ProgrammaticSkin");
+			}
+	        .HSlider {
+	            thumbSkin: Embed(source="assets/b_icons/ctrl_shifter_g.png");
+	            thumb-over-skin:Embed(source="assets/b_icons/ctrl_shifter_w.png");
+	            thumb-down-skin:Embed(source="assets/b_icons/ctrl_shifter_w.png");
+	            dataTipPlacement: right;
+	            dataTipOffset: 0;
+	            
+	            
+	        }
+	        .progressBar {
+	        	track-skin:Embed(source="assets/transp.png");
+	        	track-height:10px;
+	        }
+	        .dataTipStyle {
+	        	background-color:#4AA4BE;	
+	        }
+	</mx:Style>
+<mx:Script source="CodeShared.as"/>
+<mx:Script>
+	<![CDATA[
+		import flash.net.navigateToURL;
+		import mx.managers.PopUpManager;
+		import mx.collections.ArrayCollection;
+		import mx.binding.utils.BindingUtils;
+		import flash.utils.setTimeout;
+		import mx.events.VideoEvent;
+		import mx.controls.Alert;
+		import mx.rpc.events.FaultEvent;
+		import mx.rpc.events.ResultEvent;
+		import mx.utils.StringUtil;
+		import mx.managers.CursorManager;
+		import mx.core.Application;
+		
+		[Embed("assets/b_icons/ctrl_play.png")] 
+		public var butPlay: Class;
+		[Embed("assets/b_icons/ctrl_play_g.png")] 
+		public var butPlay_g: Class;
+		[Embed("assets/b_icons/ctrl_pause.png")] 
+		public var butPause: Class;
+		[Embed("assets/b_icons/ctrl_pause_g.png")] 
+		public var butPause_g: Class;
+		
+		
+		
+		private var arrSubtitles:Array;
+		private var subtitlesIndex:int;
+		
+		private var beginTime:Number;
+		private var endTime:Number;
+		
+		private var subtitlesLine:int=0;
+		private var subtitlesPlay:Boolean=false;
+		//private var justReading:Boolean=false;
+		[Bindable]
+		private var arrVocabulary:ArrayCollection;
+		
+		private var playHeadChanged:Boolean=false;
+		[Bindable]
+		public var serverURL:String="http://www.wiejowski.com/driller/";//"http://www.driller-vocabulary.com";
+		[Bindable]
+		private var videoInitialized:Boolean=false;
+		
+		/*override protected function selectItem(item:IListItemRenderer, shiftKey:Boolean, ctrlKey:Boolean, transition:Boolean = true):Boolean {
+			return super.selectItem(item, shiftKey, true, transition )
+		}*/ 		
+		private function fClose():void{
+			if(videoInitialized)
+				video.stop();
+			PopUpManager.removePopUp(this);
+		}
+		private function fInit():void{
+			httpVideos.send();
+			video.playheadUpdateInterval=50;
+			video.bufferTime=10;
+			
+			cmdDownload.toolTip=parentDocument.myXMLlang.tooltips.videoimport;
+			//Application.application.alwaysInFront=false;
+		}	
+		private function fPlay():void{
+			if(video.playing){
+				video.pause();
+				togglePlay("play");
+				//cmdList.setStyle("disabledIcon",listShowIconLightGrey);			
+			}else{
+				video.play();
+				togglePlay("pause");
+				//cmdList.setStyle("disabledIcon",listShowIconLightGrey);					
+			}
+		}
+		private function togglePlay(mode:String):void{
+			if(mode=="play"){
+				cmdPlay.setStyle("icon",butPlay_g);
+				cmdPlay.setStyle("overIcon",butPlay);
+				cmdPlay.setStyle("downIcon",butPlay);				
+			}else{
+				cmdPlay.setStyle("icon",butPause_g);
+				cmdPlay.setStyle("overIcon",butPause);
+				cmdPlay.setStyle("downIcon",butPause);				
+			}
+		}
+		private function fStop():void{
+			video.stop();
+			subtitlesIndex=0;
+			togglePlay("play");
+		}
+		private function fPause():void{
+			video.pause();
+		}
+		private function fSetSubtitles(srt:String):void{
+			var fileText:File;
+			//fileText = File.applicationDirectory.resolvePath("http://www.driller-vocabulary.com/videos/"+srt);//new File("assets/"+srt);
+			var urlRequest:URLRequest=new URLRequest("http://www.wiejowski.com/driller/videos/"+srt);
+			//var urlRequest:URLRequest=new URLRequest("assets/"+srt);
+			var loader:URLLoader = new URLLoader();
+			configureListeners(loader);
+            try {
+                loader.load(urlRequest);
+            } catch (error:Error) {
+                trace("Unable to load requested document.");
+            }
+
+			/*fileText = new File();
+			var fs:FileStream = new FileStream();
+			fs.open(fileText, FileMode.READ);
+			
+			var fileData:String = fs.readUTFBytes(fs.bytesAvailable);
+			fs.close();
+			
+			fileData = fileData.replace(/\n/g, File.lineEnding);
+			arrSubtitles=fileData.split(File.lineEnding);*/
+			
+		}
+        private function configureListeners(dispatcher:IEventDispatcher):void {
+            dispatcher.addEventListener(Event.COMPLETE, completeHandler);
+            /*dispatcher.addEventListener(Event.OPEN, openHandler);
+            dispatcher.addEventListener(ProgressEvent.PROGRESS, progressHandler);
+            dispatcher.addEventListener(SecurityErrorEvent.SECURITY_ERROR, securityErrorHandler);
+            dispatcher.addEventListener(HTTPStatusEvent.HTTP_STATUS, httpStatusHandler);
+            dispatcher.addEventListener(IOErrorEvent.IO_ERROR, ioErrorHandler);*/
+        }
+        private function completeHandler(event:Event):void {
+            var loader:URLLoader = URLLoader(event.target);
+            trace("completeHandler: " + loader.data);
+    
+			var fileData:String = loader.data;
+			
+			fileData = fileData.replace(/\n/g, File.lineEnding);
+			arrSubtitles=fileData.split(File.lineEnding);
+			
+			//convert all time values to miliseconds
+			for(var i:int = arrSubtitles.length - 1; i >= 0; i--) {
+			    if(StringUtil.trim(arrSubtitles[i]).length==0) {
+			        //removeChild(arrSubtitles[i]);
+			        arrSubtitles.splice(i, 1);
+			    }
+			}						
+			for(var j:int=1;j<arrSubtitles.length;j+=3){
+				if(arrSubtitles[j]!="")
+					arrSubtitles[j]=fGetTimes(arrSubtitles[j]);
+			}
+			
+			subtitlesIndex=0;
+			fSetTimes(arrSubtitles[subtitlesIndex+1]);
+			setShifter(0);
+			video.play();
+        }
+		private function fReadSubtitles(e:VideoEvent):void{
+			var headTime:Number;
+			
+			progressBar.setProgress(e.playheadTime, video.totalTime);
+			setShifter(Math.floor(progressBar.percentComplete));
+
+			headTime=fGetMiliseconds(e.playheadTime.toString());
+			
+			if(fFindSubtitles(headTime)){
+				lblSubtitles.text=arrSubtitles[subtitlesIndex+2];
+			}else{
+				lblSubtitles.text="";
+			}
+		}
+		private function fChangePlayhead():void{
+			var positionX:Number=0;
+			var newHeadTime:Number;
+			
+			if(dgVideos.selectedIndex==-1) return;
+			
+			//video.pause();
+			positionX=progressBar.contentMouseX<0?0:progressBar.contentMouseX;
+			var mPercent:Number=Math.floor(100/progressBar.width*positionX);
+			//lblDisplay.text+="\npercent: "+mPercent;
+			
+			newHeadTime=video.totalTime/100*mPercent;
+			video.playheadTime=newHeadTime;
+			
+			newHeadTime=fGetMiliseconds(newHeadTime.toString());
+			//lblDisplay.text+=" playhead: "+newHeadTime.toFixed(2);
+			playHeadChanged=true;
+			togglePlay("pause");
+		}
+		private function fFindSubtitles(headTime:Number):Boolean{
+			var arrSubTime:Array;
+			var time1:Number;
+			var time2:Number;
+			var subFound:Boolean=false;
+			var index:Number=1;
+			//lblDisplay.text=headTime.toString();
+			
+			if(playHeadChanged){
+				index=1;
+			}else{
+				index=subtitlesIndex+1;
+			}
+			
+			for(var i:int=1;i<arrSubtitles.length;i+=3){
+				arrSubTime=arrSubtitles[i].split(";");
+				time1=arrSubTime[0];
+				time2=arrSubTime[1];
+				
+				if(headTime<time2){
+					if(headTime>=time1){
+						subtitlesIndex=i-1;
+						fSetTimes(arrSubtitles[i]);
+						//subtitlesPlay=false;
+						subFound=true;
+					}else{
+						subFound=false;
+					}
+					break;
+				}
+			}
+			return subFound;
+		}		
+		private function fSetTimes(pTime:String):void{
+			var arrSubTime:Array;
+			
+			//split to time parts
+			arrSubTime=pTime.split(";");
+			
+			beginTime=arrSubTime[0];
+			endTime=arrSubTime[1];
+		}
+		private function fGetTimes(pTime:String):String{
+			var arrSubTime:Array;
+			
+			//split to time parts
+			pTime=pTime.replace("\r","");
+			arrSubTime=pTime.split("-->");
+			
+			return fGetMiliseconds(arrSubTime[0])+";"+fGetMiliseconds(arrSubTime[1]);
+		}		
+		private function fGetMiliseconds(pTime:String):Number{
+			var arrSubTime:Array;
+			var arrSubTime2:Array;
+			var subHours:Number=0;
+			var subMinutes:Number=0;
+			var subSeconds:Number=0;
+			var subMiliseconds:Number=0;
+			
+			var tt:Number;
+			
+			//replace comma with dot to align both cases into one design and solution
+			pTime=pTime.replace(",",".");
+			
+			//checks if it's subtitle time string (00:00:00,000) or playhead time string (0.000)
+			if(pTime.indexOf(":")!=-1){
+				//split to time parts
+				arrSubTime=pTime.split(":");
+				
+				//convert to seconds
+				subHours=arrSubTime[0]*3600;
+				subMinutes=arrSubTime[1]*60;
+				
+				//split to seconds and miliseconds			
+				arrSubTime2=arrSubTime[2].split(".");		
+			}else{
+				//split to seconds and miliseconds
+				tt=Number(pTime);
+				pTime=tt.toFixed(3);
+				arrSubTime2=pTime.toString().split(".");
+			}
+
+			subSeconds=arrSubTime2[0];
+			subMiliseconds=(arrSubTime2[1]==undefined)?0:arrSubTime2[1];
+			
+			//convert all to miliseconds
+			subMiliseconds+=((subHours+subMinutes+subSeconds)*1000);
+			
+			return subMiliseconds;
+		}
+		private function fVideoStateChange(e:VideoEvent):void{
+			/*if(e.state==VideoEvent.COMPLETE){
+				Alert.show("konec");
+				subtitlesIndex=0;
+				//subtitlesLine=arrSubtitles[subtitlesIndex];
+				fSetTimes(arrSubtitles[subtitlesIndex+1]);
+			}*/
+		}
+		private function fVideoComplete(e:VideoEvent):void{
+			subtitlesIndex=0;
+			fSetTimes(arrSubtitles[subtitlesIndex+1]);
+			togglePlay("play");	
+		}
+		private function formatTime(value:int):String{
+			var result:String = (value % 60).toString();
+	        if (result.length == 1)
+		       result = Math.floor(value / 60).toString() + ":0" + result;
+	        else
+		       result = Math.floor(value / 60).toString() + ":" + result;
+			       
+			return result;
+		}
+		private function setShifter(val:Number):void{
+			imgShifter.y=progressBar.y-(imgShifter.height/2)+(progressBar.height/2);
+			imgShifter.x=progressBar.x+progressBar.width/100*val-(imgShifter.width/2);
+		}
+
+		private var isMouseDown:Boolean=false;
+		
+		private function fShifterDown():void{
+			if(videoInitialized){
+				video.pause();
+				isMouseDown=true;
+			}
+		}
+		private function fShifterMove():void{
+			if(isMouseDown)
+				if(this.contentMouseX-(imgShifter.width/2)<progressBar.x){
+					setShifter(0);
+				}else if(this.contentMouseX>progressBar.x+progressBar.width-(imgShifter.width/2)){
+					//imgShifter.x=progressBar.x+progressBar.width-(imgShifter.width/2);
+					setShifter(100);
+				}else{
+					imgShifter.x=progressBar.contentMouseX+(imgShifter.width/2);
+				}
+		}
+		private function fShifterUp():void{
+			//video.play();
+			if(isMouseDown && videoInitialized){
+				isMouseDown=false;
+				fChangePlayhead();
+				video.play();
+			}			
+		}
+		private function fVideosResult(event:ResultEvent):void{
+			//Alert.show("OK: "+event.result.toString());
+			//getEnabling();
+		}
+		private function fVideosFault(event:FaultEvent):void{
+			//Alert.show("Error: "+event.message.toString());
+		}
+		public function fGetVideoItem():void{
+			if(dgVideos.selectedIndex==-1) return;
+			
+			var flv:String=dgVideos.selectedItem.file;
+			var srt:String=dgVideos.selectedItem.subtitles;
+			var lngdir:String=dgVideos.selectedItem.lang_from;
+			var link:String=dgVideos.selectedItem.sourcelink;
+			var icon:String=dgVideos.selectedItem.sourceicon;
+			
+			if(link!=null){
+				imgSource.visible=true;
+				imgSource.source=icon;
+				imgSource.toolTip=link;
+			}else{
+				imgSource.visible=false;
+			}
+			
+			video.source="http://www.wiejowski.com/driller/videos/"+lngdir+"/"+flv;
+			videoInitialized=true;
+			//video.source="assets/"+flv;
+			//video.load();
+			//video.play();
+			togglePlay("pause");
+			fSetSubtitles(lngdir+"/"+srt);
+			
+			this.title="("+dgVideos.selectedItem.source+") "+dgVideos.selectedItem.title;
+		}
+		private function fVideoProgress(e:ProgressEvent):void{
+			progressBar2.setProgress(e.bytesLoaded,e.bytesTotal);
+		}
+		public function fGetVocabulary():void {
+			var fileText:File;
+			var txt:String=dgVideos.selectedItem.vocabulary;
+			var lngdir:String=dgVideos.selectedItem.lang_from;
+			
+			var urlRequest:URLRequest=new URLRequest("http://www.wiejowski.com/driller/videos/"+lngdir+"/"+txt);
+			//var urlRequest:URLRequest=new URLRequest("assets/"+srt);
+			var loader:URLLoader = new URLLoader();
+			loader.addEventListener(Event.COMPLETE, completeVocabularyHandler);
+            try {
+            	CursorManager.setBusyCursor();
+                loader.load(urlRequest);
+            } catch (error:Error) {
+            	CursorManager.removeBusyCursor();
+                trace("Unable to load requested document.");
+            }			
+		}
+        private function completeVocabularyHandler(event:Event):void {
+            var loader:URLLoader = URLLoader(event.target);
+            trace("completeHandler: " + loader.data);
+    
+			var fileData:String = loader.data;
+			var ar:Array;
+			
+			
+			fileData = fileData.replace(/\n/g, File.lineEnding);
+			ar=fileData.split(File.lineEnding);
+			//var arcol:ArrayCollection=new ArrayCollection(ar);
+			arrVocabulary=new ArrayCollection(ar);
+			
+			//convert all time values to miliseconds
+			/*for(var i:int = arrVocabulary.length - 1; i >= 0; i--) {
+			    if(StringUtil.trim(arrVocabulary[i]).length==0) {
+			        //removeChild(arrSubtitles[i]);
+			        arrSubtitles.splice(i, 1);
+			    }
+			}*/	
+			CursorManager.removeBusyCursor();			
+			vsList.selectedIndex=1;
+        }
+        private function fDownload():void{
+        	var newnode:XML = new XML();
+        	var arrTemp:ArrayCollection;
+        	
+        	if(dgVocabulary.selectedItems.length>0){
+        		arrTemp=new ArrayCollection(dgVocabulary.selectedItems);
+        	}else{
+        		arrTemp=arrVocabulary;
+        	}
+			for(var j:int=0;j<arrTemp.length;j++){
+
+			    newnode =
+			        <word>
+			            <EN>{arrTemp[j]}</EN>
+			            <CZ></CZ>
+			            <PR></PR>
+			            <CX></CX>
+			            <CL></CL>
+			            <UT>false</UT>
+			            <CF>0</CF>
+				        <SL>false</SL>	            
+			        </word>;
+			        
+				if(!isDuplicate(arrTemp[j])){	
+					Application.application.myXML.wordList.appendChild(newnode);
+				}	
+			}
+		
+			Application.application.fSaveXML();
+			vsList.selectedIndex=0;
+        }
+        private function fClickSource():void{
+        	if(imgSource.toolTip.length>0){
+        		var url:URLRequest=new URLRequest(imgSource.toolTip);
+        		navigateToURL(url,"_blank");
+        	}
+        }
+	]]>
+</mx:Script>
+	<mx:VideoDisplay progress="fVideoProgress(event)" complete="fVideoComplete(event)" stateChange="fVideoStateChange(event)" playheadUpdate="fReadSubtitles(event)" x="10" y="10" width="377" height="235" autoPlay="false" id="video"/>
+	<mx:Button enabled="{videoInitialized}" styleName="myButtonStyle" x="10" y="313" id="cmdPlay" click="fPlay()" height="22" width="22">
+		<mx:downIcon>@Embed(source='assets/b_icons/ctrl_play.png')</mx:downIcon>
+		<mx:icon>@Embed(source='assets/b_icons/ctrl_play_g.png')</mx:icon>
+		<mx:overIcon>@Embed(source='assets/b_icons/ctrl_play.png')</mx:overIcon>
+	</mx:Button>
+	<mx:Button enabled="{videoInitialized}" styleName="myButtonStyle" x="40" y="313" width="22" id="cmdStop" click="fStop()" height="22">
+		<mx:downIcon>@Embed(source='assets/b_icons/ctrl_stop.png')</mx:downIcon>
+		<mx:icon>@Embed(source='assets/b_icons/ctrl_stop_g.png')</mx:icon>
+		<mx:overIcon>@Embed(source='assets/b_icons/ctrl_stop.png')</mx:overIcon>		
+	</mx:Button>
+	<mx:Label x="309" y="315" width="78" id="lblTime" text="{formatTime(video.playheadTime)} / {formatTime(video.totalTime)}" color="#FFFFFF"/>
+	<!--<mx:Label x="395" y="10" width="228" height="20" id="lblWork" color="#000000" visible="true"/>-->
+	<mx:ProgressBar trackColors="[0x000000,0x343841]" trackHeight="10" x="10" y="292" id="progressBar2" width="377" height="10" mode="manual" label="" borderColor="#1a1d22" themeColor="#54585E"/>
+	<mx:ProgressBar styleName="progressBar" borderColor="#1a1d22" click="fChangePlayhead()" x="10" y="292" id="progressBar" width="377" height="10" mode="manual" label="" themeColor="#4AA4BE" alpha="0.7"/>
+	<mx:HSlider id="volSlider" styleName="HSlider" showTrackHighlight="true" liveDragging="true" minimum="0.0" maximum="1.0" value="1.0" snapInterval="0.01" 
+                 change="video.volume=volSlider.value" width="100" x="201" y="313" fillAlphas="[1.0, 1.0, 1.0, 1.0]" fillColors="[#FFFFFF, #FFFFFF]" borderColor="#FFFFFF" allowTrackClick="true" themeColor="#4AA4BE" dataTipStyleName="dataTipStyle"/>	
+	<!--<mx:TextArea x="395" y="227" width="228" height="111" id="lblDisplay" color="#000000" visible="true"/>-->
+	<mx:TextArea  x="10" y="245" width="377" height="40" editable="false" wordWrap="true" id="lblSubtitles" color="#FFFFFF" textAlign="center" backgroundColor="#000000" borderStyle="none" fontSize="12"/>
+	<mx:Button enabled="{videoInitialized}" styleName="myButtonStyle" x="5" y="290" id="imgShifter" width="14" height="14" mouseDown="fShifterDown()">
+		<mx:downIcon>@Embed(source='assets/b_icons/ctrl_shifter_w.png')</mx:downIcon>
+		<mx:icon>@Embed(source='assets/b_icons/ctrl_shifter_g.png')</mx:icon>
+		<mx:overIcon>@Embed(source='assets/b_icons/ctrl_shifter_w.png')</mx:overIcon>
+	</mx:Button>
+	
+    <mx:WipeUp id="myWU" duration="300"/>
+    <mx:WipeDown id="myWD" duration="300"/>
+    <mx:WipeRight id="myWR" duration="300"/>
+    <mx:WipeLeft id="myWL" duration="300"/>
+	
+	<mx:ViewStack x="395" y="10" id="vsList" width="226" height="334" creationPolicy="all">
+		<mx:Canvas hideEffect="myWL" showEffect="myWR" label="list" width="100%" height="100%">
+			<mx:DataGrid verticalGridLines="false" verticalAlign="middle" backgroundAlpha="1" id="dgVideos" rollOverColor="#4aa4be" selectionColor="#4aa4be" dataProvider="{httpVideos.lastResult.records.record}" x="0" y="0" width="100%" showHeaders="false" borderStyle="none" height="293" themeColor="#009DFF" borderColor="#282828" alternatingItemColors="[#1A1D22, #23272E]">
+				<mx:columns>
+					<mx:DataGridColumn headerText="" itemRenderer="CellList" editable="false" dataField="title" color="#ffffff" width="200"/>
+					<mx:DataGridColumn headerText="" itemRenderer="CellButton" editable="false" dataField="vocabulary" width="30"/>
+				</mx:columns>
+			</mx:DataGrid>
+		</mx:Canvas>
+		<mx:Canvas hideEffect="myWL" showEffect="myWR" label="vocabulary" width="100%" height="100%">
+			<lwc:MultiDataGrid dataProvider="{arrVocabulary}" x="0" y="0" width="100%" verticalAlign="middle" backgroundAlpha="0" id="dgVocabulary" selectable="true" allowMultipleSelection="true" rollOverColor="#78cde5" selectionColor="#4aa4be" showHeaders="false" borderStyle="none" themeColor="#009DFF" borderColor="#282828" height="292" color="#FFFFFF">
+				<lwc:columns>
+					<mx:DataGridColumn headerText="" dataField=""/>
+				</lwc:columns>
+			</lwc:MultiDataGrid>
+			
+			<mx:Button styleName="myButtonStyle" x="204" y="300" width="22" id="cmdDownload" click="fDownload()" height="22">
+				<mx:downIcon>@Embed(source='assets/b_icons/import_white.png')</mx:downIcon>
+				<mx:icon>@Embed(source='assets/b_icons/import_grey.png')</mx:icon>
+				<mx:overIcon>@Embed(source='assets/b_icons/import_white.png')</mx:overIcon>		
+			</mx:Button>
+			<mx:Button styleName="myButtonStyle" x="174" y="300" width="22" id="cmdBack" click="{vsList.selectedIndex=0}" height="22">
+				<mx:downIcon>@Embed(source='assets/b_icons/listhide_white.png')</mx:downIcon>
+				<mx:icon>@Embed(source='assets/b_icons/listhide_grey.png')</mx:icon>
+				<mx:overIcon>@Embed(source='assets/b_icons/listhide_white.png')</mx:overIcon>		
+			</mx:Button>
+		</mx:Canvas>
+	</mx:ViewStack>
+	<mx:Image buttonMode="true" x="123" y="312" height="32" width="70" id="imgSource" click="fClickSource()">
+	</mx:Image>
+</mx:TitleWindow>

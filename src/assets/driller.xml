@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+    <wordList>
+        <word>
+            <EN>hello</EN>
+            <CZ>ahoj</CZ>
+            <PR>helou</PR>
+            <CX>Hello customer! :)</CX>
+            <CL>51;51;255</CL>
+            <UT>false</UT>
+            <CF>0</CF>
+            <SL>false</SL>
+        </word>
+    </wordList>
+    <interval>1</interval>
+    <name>My Vocabulary</name>
+    <randomMode>false</randomMode>
+    <swap>false</swap>
+	<index>0</index>
+    <swaprnd>false</swaprnd>
+</root>

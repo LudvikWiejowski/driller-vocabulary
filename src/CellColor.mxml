@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" horizontalAlign="center">
+	<mx:Script>
+		<![CDATA[
+			import mx.core.Application;
+		]]>
+	</mx:Script>
+	<mx:ColorPicker id="cp" selectedColor="{data.color}" change="{data.color=cp.selectedColor}" buttonMode="true"/>
+</mx:HBox>

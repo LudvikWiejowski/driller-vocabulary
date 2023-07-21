@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Adobe\Flex Builder 3\sdks\3.2.0-Air2\bin\adt.bat" -sign -storetype pkcs12 -keystore "C:\Users\luwi\Documents\Flex Builder 3\LudvikWiejowski6.pfx" -tsa "http://timestamp.comodoca.com/rfc3161" "C:\Users\luwi\Documents\Flex Builder 3\Driller\Driller.airi" "C:\Users\luwi\Documents\Flex Builder 3\Driller\Driller.air"

@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <showCF>false</showCF>
+  <path/>
+    <currentlanguage>EN</currentlanguage>
+    <currenttheme>wrinkled paper</currenttheme>
+    <regemail>
+      
+    </regemail>
+    <regcode>
+      
+    </regcode>
+    <confversion>53</confversion>
+    <ct><name>EN</name><buttons><show>Show</show><next>Next</next><save>Save</save><add>New</add><setup>Options</setup><radio1>I KNOW</radio1><radio2>NOT SURE</radio2><radio3>WHAT?!</radio3><add2>Update</add2><addtext>Insert new word</addtext><trayshow>Show</trayshow><trayhide>Hide</trayhide><traypause>Pause</traypause><trayexit>Exit</trayexit><nextskip>Next Now</nextskip></buttons><grid><col1>Word</col1><col2>Translation</col2><col3>Pronunciation</col3><col4>Context</col4></grid><settings><title>Settings</title><file>Current file</file><interval>Interval (sec)</interval><random>Random</random><swap>Swap</swap><language>Language</language><newfile>New</newfile><opt1>Semicolon</opt1><opt2>Tab</opt2><opt3>Comma</opt3><opt4>Custom</opt4><order1>Foreign word</order1><order2>Translation</order2><order3>Pronunciation</order3><order4>Context</order4><importfile>Import file</importfile><imptext1>This separates text files to words and creates vocabulary files with contextual sentences</imptext1><imptext2>Excluded characters (delimited by space):</imptext2><excluded>
+
+
+
+. , ; : ! ? / \ ( ) [ ]</excluded><importtext>Import text file</importtext><options1>General options</options1>
+
+<options2>Import External Vocabulary</options2><options3>Import Text</options3><options4>About</options4><abouttext>Visit us on:&lt;br&gt;&lt;a href='http://www.driller-vocabulary.com' target='_blank'&gt;&lt;font color='#4152fb'&gt;www.driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;br&gt;Email to:&lt;br&gt;&lt;a href='mailto:support@driller-vocabulary.com'&gt;&lt;font color='#4152fb'&gt;support@driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;/b&gt;</abouttext><aboutemail>Registr. email:</aboutemail><aboutcode>Registr. code:</aboutcode><showcf>Show evaluation column</showcf><options5>Google Translate</options5><translatedescription>Translation via on-line Google Translate tool. Choose from which language to which language to translate. When adding or editting a word, press green side button of translation field, translation will be made.</translatedescription><translatefrom>From</translatefrom><translateto>To</translateto><swaprnd>Swap randomly</swaprnd></settings><tooltips><show>(F4)</show><next>(F5)</next><save>Save word changes (F6)</save><add>(F7)</add><setup>(F8)</setup><radio1>(F1)</radio1><radio2>(F2)</radio2><radio3>(F3)</radio3><colorpicker>Choose color of your word and press Save button</colorpicker><text1/><text2/><text3>Pronunciation</text3><text4>Context</text4><maximize>Maximize</maximize><close>Quit app (F12)</close><showlist>Show vocabulary list (F9)</showlist><hidelist>Hide vocabulary list (F9)</hidelist><file/><filebutton>
+
+Select vocabulary file</filebutton>
+<interval/><random/><swap/><language/><newfile>Creates new file</newfile><showstorage>Open vocabulary folder</showstorage><listorder>Set order of your file (drag&amp;drop)</listorder><custom>Define your delimiter here</custom><importfile>Import your vocabulary</importfile><excluded>Characters to be excluded from imported text</excluded><importtext/><aboutemail>Enter your registration email</aboutemail><aboutcode>Enter your registration code</aboutcode><eval>Show evaluation column words</eval><clsbutton>Save &amp; Close</clsbutton><nextskip>Next word without interval (F10)</nextskip><ipa>IPA</ipa><translate>Google Translate</translate><print>Print cards</print><printselect>Select/Deselect all</printselect><swaprnd/><mp3>Creates sound files of selected words for your mp3 player</mp3><translateall>Translates all selected words</translateall><voice>(F11)</voice></tooltips><alerts><alert1>Changes have been saved...</alert1><alert2>Conf changes have been saved...</alert2>
+
+
+<alert3>Do you want to quit application?</alert3>
+
+<alert4>Enter word</alert4><alert5>Enter translation</alert5><alert6>word already exists!</alert6><alert7>Do you really want to delete word</alert7><alert8>File has been created</alert8><alert9>Please, define custom delimiter</alert9><alert10>Do you want to put translation for all selected words?</alert10></alerts><flag>assets/icons/en.png</flag></ct><ct><name>CZ</name><buttons><show>Ukázat</show><next>Dále</next><save>Uložit</save><add>Nový</add><setup>Volby</setup><radio1>VÍM</radio1><radio2>NEJISTÝ</radio2><radio3>COŽE?!</radio3><add2>Editovat</add2><addtext>Nové slovo</addtext><trayshow>Zobrazit</trayshow><trayhide>Skrýt</trayhide><traypause>Pauza</traypause><trayexit>Ukončit</trayexit>
+<nextskip>Dále Now</nextskip></buttons><grid><col1>Slovo</col1><col2>Překlad</col2><col3>Výslovnost</col3><col4>Kontext</col4></grid><settings><title>Nastavení</title><file>Soubor</file><interval>Interval</interval><random>Náhodně</random><swap>Přehodit</swap><language>Jazyk</language><newfile>Nový</newfile><opt1>Středník</opt1><opt2>Tab</opt2><opt3>Čárka</opt3><opt4>Vlastní</opt4>
+<order1>Cizí slovíčko</order1><order2>Překlad</order2><order3>Výslovnost</order3><order4>Kontext</order4>
+<importfile>Načíst soubor</importfile><imptext1>Text rozdělí na jednotlivá slova a ta načte i s kontextovýma větama</imptext1><imptext2>Eliminace znaků (oddělovat mezerou):</imptext2><excluded>. , ; : ! ? / \ ( ) [ ]</excluded><importtext>Načíst text</importtext><options1>Hlavní</options1>
+<options2>Načíst externí soubor slovíček</options2><options3>Načíst textový soubor</options3><options4>O aplikaci</options4><abouttext>Koupit na:&lt;br&gt;&lt;a href='http://www.driller-vocabulary.com' target='_blank'&gt;&lt;font color='#4152fb'&gt;www.driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;br&gt;Email to:&lt;br&gt;&lt;a href='mailto:support@driller-vocabulary.com'&gt;&lt;font color='#4152fb'&gt;support@driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;/b&gt;</abouttext><aboutemail>Reistr. email:</aboutemail><aboutcode>Registr. kód:</aboutcode><showcf>Zobrazit sloupec ohodnocení</showcf><options5>Google Translate</options5><translatedescription>Překlad on-line nástrojem Google Translate. Vyberte z kterého do kterého jazyka překládat. Při přidávání nebo úpravě slovíčka stiskněte postranní zelené tlačítko překladového pole, překlad bude proveden.</translatedescription><translatefrom>Z</translatefrom><translateto>Do</translateto><swaprnd>Přehazovat náhodně</swaprnd></settings><tooltips><show>(F4)</show><next>(F5)</next><save>Uložit změny (F6)</save><add>(F7)</add><setup>(F8)</setup><radio1>(F1)</radio1><radio2>(F2)</radio2><radio3>(F3)</radio3><colorpicker>Vyberte barvu a uložte tlačítkem Uložit</colorpicker><text1/><text2/><text3>Výslovnost</text3><text4>
+Kontext</text4><maximize>Zvětšit</maximize><close>Ukončit (F12)</close><showlist>Ukázat seznam slovíček (F9)</showlist>
+
+<hidelist>Skrýt seznam slovíček (F9)</hidelist><file/><filebutton>Vybere soubor slovíček</filebutton><interval/><random/><swap/><language/><newfile>Vytvoří nový, prázdný soubor</newfile><showstorage>Otevře složku slovíček</showstorage><listorder>Nastaví pořadí polí (drag&amp;drop)</listorder><custom>Definuje vlastní oddělovač</custom><importfile>Importuje soubor slovíček</importfile><excluded>Znaky, které budou z textu eliminovány</excluded><importtext/><aboutemail>Prosím, vložte Váš email</aboutemail><aboutcode>Prosím, vložte obdržený registrační kód</aboutcode><eval>Zobrazí sloupec aktuálního ohodnocení slovíčka</eval><clsbutton>Uložit &amp; Zavřít</clsbutton><nextskip>Přesun na další slovíčko bez ohledu na interval. (F10)</nextskip><ipa>IPA</ipa><translate>Google Translate</translate><print>Tisk kartiček</print><printselect>Označit/Zrušit vše</printselect><swaprnd/><mp3>Z vybraných slovíček vytvoří zvukové soubory pro mp3 přehrávač</mp3><translateall>Doplní překlad ke všem označeným slovíčkám</translateall><voice>(F11)</voice></tooltips><alerts><alert1>Změny byly uloženy...</alert1><alert2>Změny v konfiguraci byly uloženy...</alert2><alert3>Přejete si ukončit aplikaci?</alert3>
+
+<alert4>Vložte slovo prosím</alert4><alert5>Vložte překlad prosím</alert5><alert6>slovíčko již existuje!</alert6><alert7>Přejete si smazat slovíčko</alert7><alert8>Soubor byl vytvořen</alert8><alert9>Zadejte prosím vlastní oddělovač</alert9><alert10>Přejete si vložit překlad pro všechna označená slovíčka?</alert10></alerts><flag>assets/icons/cz.png</flag></ct>
+
+<ct><name>SK</name><buttons><show>Ukažte</show><next>Ďalej</next><save>Uložte</save><add>Nový</add><setup>Voľby</setup><radio1>VIEM</radio1><radio2>NEISTÝ</radio2><radio3>ČOŽE?!</radio3><add2>Editovať</add2><addtext>Nové slovo</addtext><trayshow>Zobraziť</trayshow><trayhide>Skryť</trayhide><traypause>Pauza</traypause><trayexit>Ukončiť</trayexit>
+<nextskip>Ďalej Now</nextskip></buttons><grid><col1>Slovo</col1><col2>Preklad</col2><col3>Výslovnosť</col3><col4>Kontext</col4></grid><settings><title>Nastavenie</title><file>Súbor</file><interval>Interval (sec)</interval><random>Náhodne</random><swap>Vymeniť</swap><language>Jazyk</language><newfile>Nový</newfile><opt1>Bodkočiarka</opt1><opt2>Tab</opt2><opt3>Čiarka</opt3><opt4>Vlastné</opt4>
+<order1>Cudzie slovíčko</order1><order2>Preklad</order2><order3>Výslovnosť</order3><order4>Kontext</order4>
+<importfile>Načítať súbor</importfile><imptext1>Text rozdelí na jednotlivé slová a tie načíta aj s kontextovými vetami</imptext1><imptext2>Eliminácia znakov (oddelovať medzerou):</imptext2><excluded>. , ; : ! ? / \ ( ) [ ]</excluded><importtext>Načítať text</importtext><options1>Hlavné</options1>
+<options2>Načítať externý súbor slovíčok</options2><options3>Načítať textový súbor</options3><options4>O aplikacií</options4><abouttext>Kúpit na:&lt;br&gt;&lt;a href='http://www.driller-vocabulary.com' target='_blank'&gt;&lt;font color='#4152fb'&gt;www.driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;br&gt;Email na:&lt;br&gt;&lt;a href='mailto:support@driller-vocabulary.com'&gt;&lt;font color='#4152fb'&gt;support@driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;/b&gt;</abouttext><aboutemail>Reistr. email:</aboutemail><aboutcode>Registr. kód:</aboutcode><showcf>Zobraziť stĺpec ohodnotenia</showcf><options5>Google Translate</options5><translatedescription>Preklad on-line nástrojom Google Translate. Vyberte, z ktorého do ktorého jazyka prekladať. Pri pridávaní alebo úprave slovíčka stlačte postranné zelené tlačítko prekladového poľa, preklad bude vykonaný.</translatedescription><translatefrom>Z</translatefrom><translateto>Do</translateto><swaprnd>Vymeniť náhodne</swaprnd></settings><tooltips><show>(F4)</show><next>(F5)</next><save>Uložiť zmeny (F6)</save><add>(F7)</add><setup>(F8)</setup><radio1>(F1)</radio1><radio2>(F2)</radio2><radio3>(F3)</radio3><colorpicker>Vyber farbu a ulož tlačitkom Uložiť</colorpicker><text1/><text2/><text3>Výslovnosť</text3><text4>
+Kontext</text4><maximize>Zväčšiť</maximize><close>Ukončiť (F12)</close><showlist>Ukázať zoznam slovíčok (F9)</showlist>
+
+<hidelist>Skrýť zoznam slovíčok (F9)</hidelist><file/><filebutton>Vyberie súbor slovíčok</filebutton><interval/><random/><swap/><language/><newfile>Vytvorí nový, prázdny súbor</newfile><showstorage>Otvoriť zložku slovíčok</showstorage><listorder>Nastaví poradie polí (drag&amp;drop)</listorder><custom>Definuje vlastný oddelovač</custom><importfile>Importuje súbor slovíčok</importfile><excluded>Znaky, ktoré budú z textu eliminované</excluded><importtext/><aboutemail>Prosím vložte Váš email</aboutemail><aboutcode>Prosím, vložte obdržaný registračný kód</aboutcode><eval>Zobrazí stĺpec aktuálneho ohodnotenia slovíčka</eval><clsbutton>Uložiť &amp; Zavrieť</clsbutton><nextskip>Presun na ďaľší slovíčko bez ohľadu na interval. (F10)</nextskip><ipa>IPA</ipa><translate>Google Translate</translate><print>Vytlačiť kartičky</print><printselect>Označiť/Zrušiť vše</printselect><swaprnd/><mp3>Z vybraných slovíčok vytvorí zvukové súbory pre mp3 player</mp3><translateall>Doplní preklad ku všem označným slovíčkám</translateall><voice>(F11)</voice></tooltips><alerts><alert1>Zmeny boli uložené...</alert1><alert2>Zmeny v konfiguracií boli uložené...</alert2><alert3>Prajete si ukončiť aplikáciu?</alert3>
+
+<alert4>Vložte slovo prosím</alert4><alert5>Vložte preklad prosím</alert5><alert6>slovíčko už existuje!</alert6><alert7>Prajete si zmazať slovíčko</alert7><alert8>Súbor bol vytvorený</alert8><alert9>Zadaj prosím vlastný oddelovač</alert9><alert10>Prajete si preložit všetky označené slovíčka?</alert10></alerts><flag>assets/icons/sk.png</flag></ct>
+<ct>
+  <name>DE</name>
+  <buttons>
+    <show>Zeigen</show>
+    <next>Weiter</next>
+    <save>Speichern</save>
+    <add>Neu</add>
+    <setup>Optionen</setup>
+    <radio1>SICHER</radio1>
+    <radio2>UNSICHER</radio2>
+    <radio3>WAS?!</radio3>
+    <add2>Aktualisieren</add2>
+    <addtext>Neues Wort einfügen</addtext>
+    <trayshow>Zeigen</trayshow>
+    <trayhide>Verstecken</trayhide>
+    <traypause>Pause</traypause>
+    <trayexit>Ende</trayexit>
+    <nextskip>Jetz Weiter</nextskip>
+  </buttons>
+  <grid>
+    <col1>Wort</col1>
+    <col2>Übersetzung</col2>
+    <col3>Aussprache</col3>
+    <col4>Kontext</col4>
+  </grid>
+  <settings>
+    <title>Einstellungen</title>
+    <file>Aktuelle Datei</file>
+    <interval>Interval (Sek.)</interval>
+    <random>Zufall</random>
+    <swap>Tauschen</swap>
+    <language>Sprache</language>
+    <newfile>Neu</newfile>
+    <opt1>Strichpunkt</opt1>
+    <opt2>Tabulator</opt2>
+    <opt3>Beistrich</opt3>
+    <opt4>Individuell</opt4>
+    <order1>Fremdwort</order1>
+    <order2>Übersetzung</order2>
+    <order3>Aussprache</order3>
+    <order4>Kontext</order4>
+    <importfile>Datei importieren</importfile>
+    <imptext1>Hiermit können Sie den Text in einzelne Wörter teilen und Sätze mit diesen Wörtern erstellen.</imptext1>
+    <imptext2>Ausgeschlossene Zeichen (getrennt durch Leerzeichen)</imptext2>
+    <excluded>
+
+
+
+. , ; : ! ? / \ ( ) [ ]</excluded>
+    <importtext>Textfile importieren</importtext>
+    <options1>Allgemeine Optionen</options1>
+    <options2>Externe Vokabeln importieren</options2>
+    <options3>Textfile importieren</options3>
+    <options4>Info</options4>
+    <abouttext>Besuchen sie uns auf:&lt;br&gt;&lt;a href='http://www.driller-vocabulary.com' target='_blank'&gt;&lt;font color='#4152fb'&gt;www.driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;br&gt;Email an:&lt;br&gt;&lt;a href='mailto:support@driller-vocabulary.com'&gt;&lt;font color='#4152fb'&gt;support@driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;/b&gt;</abouttext>
+    <aboutemail>Registr. email:</aboutemail>
+    <aboutcode>Registr. code:</aboutcode>
+    <showcf>Spalte der Beurteilung</showcf>
+    <options5>Google Translate</options5>
+    <translatedescription>Übersetzung via on-line Google Übersetzungs Tool. Wählen Sie von welcher auf welche Sprache sie übersetzen möchten. Wenn Sie ein Wort dazufügen oder bearbeiten, drücken Sie den grünen button vom Übersetzungsfeld, Übersetzung erfolgt dann.</translatedescription>
+    <translatefrom>Von</translatefrom>
+    <translateto>Auf</translateto>
+    <swaprnd>Tauschen zufällig</swaprnd>
+  </settings>
+  <tooltips>
+    <show>(F4)</show>
+    <next>(F5)</next>
+    <save>Wortänderungen speichern (F6)</save>
+    <add>(F7)</add>
+    <setup>(F8)</setup>
+    <radio1>(F1)</radio1>
+    <radio2>(F2)</radio2>
+    <radio3>(F3)</radio3>
+    <colorpicker>Wählen Sie die Farbe der Wörter und betätigen sie die Speichertaste.</colorpicker>
+    <text1/>
+    <text2/>
+    <text3>Aussprache</text3>
+    <text4>Kontext</text4>
+    <maximize>Maximieren</maximize>
+    <close>Anwendung beenden (F12)</close>
+    <showlist>Vokabelliste anzeigen (F9)</showlist>
+    <hidelist>Vokabelliste verstecken (F9)</hidelist>
+    <file/>
+    <filebutton>Vokabeldatei auswählen</filebutton>
+    <interval/>
+    <random/>
+    <swap/>
+    <language/>
+    <newfile>Neue Datei erstellen</newfile>
+    <showstorage>Vokabeldatei öffnen</showstorage>
+    <listorder>Reihenfolge d. files bestimmen (drag&amp;drop)</listorder>
+    <custom>Definieren sie Ihre Trennzeichen hier</custom>
+    <importfile>Importieren Sie Ihre Vokabeln</importfile>
+    <excluded>Zeichen vom importierten Text die zu ignorieren sind</excluded>
+    <importtext/>
+    <aboutemail>Bitte geben Sie Ihre Registrationsemail ein:</aboutemail>
+    <aboutcode>Bitte geben Sie Ihren Registrierungscode ein:</aboutcode>
+    <eval>Zeige Auswertungs Spalte mit Wörtern</eval>
+    <clsbutton>Speichern &amp; schließen</clsbutton>
+    <nextskip>Gehe zum nächsten Wort, unabhängig vom Interval (F10)</nextskip>
+    <ipa>IPA</ipa>
+    <translate>Google Translate</translate>
+    <print>Karten drucken</print>
+    <printselect>Selektiere/deselektiere alles</printselect>
+    <swaprnd/>
+  <mp3>Creates sound files of selected words for your mp3 player</mp3><translateall>Translates all selected words</translateall><voice>(F11)</voice></tooltips>
+  <alerts>
+    <alert1>Änderungen wurden gespeichert…</alert1>
+    <alert2>Kofigurationsänderungen wurden gespeichert…</alert2>
+    <alert3>Wollen Sie die Anwendung beenden?</alert3>
+    <alert4>Bitte das Wort eingeben</alert4>
+    <alert5>Bitte die Übersetzung eingeben</alert5>
+    <alert6> - Das Wort existiert bereits!</alert6>
+    <alert7>Wollen Sie das Wort wirklich löschen?</alert7>
+    <alert8>Datei wurde erstellt.</alert8>
+    <alert9>Definiere das individuelle Trennzeichen</alert9>
+  <alert10>Do you want to put translation for all selected words?</alert10></alerts>
+  <flag>assets/icons/de.png</flag>
+</ct>
+<ct>
+  <name>RS</name>
+  <buttons>
+    <show>Pokaži</show>
+    <next>Dalje</next>
+    <save>Sačuvaj</save>
+    <add>Novo</add>
+    <setup>Opcije</setup>
+    <radio1>ZNAM</radio1>
+    <radio2>NESIGURNO</radio2>
+    <radio3>ŠTA?!</radio3>
+    <add2>Aktualizirat</add2>
+    <addtext>Dodati novu reč</addtext>
+    <trayshow>Pokaži</trayshow>
+    <trayhide>Sakriti</trayhide>
+    <traypause>Pausa</traypause>
+    <trayexit>Kraj</trayexit>
+    <nextskip>Dalje sada</nextskip>
+  </buttons>
+  <grid>
+    <col1>Reč</col1>
+    <col2>Prevod</col2>
+    <col3>Izgovor</col3>
+    <col4>Kontekst</col4>
+  </grid>
+  <settings>
+    <title>Podešavanja</title>
+    <file>Aktualni fajl</file>
+    <interval>Interval (sek)</interval>
+    <random>Slučaj</random>
+    <swap>Razmena</swap>
+    <language>Jezik</language>
+    <newfile>Novo</newfile>
+    <opt1>Tačka i zapeta</opt1>
+    <opt2>Tabulator</opt2>
+    <opt3>Zarez</opt3>
+    <opt4>Pojedinačno</opt4>
+    <order1>Strana reč</order1>
+    <order2>Prevod</order2>
+    <order3>Izgovor</order3>
+    <order4>Kontekst</order4>
+    <importfile>Importiraj fajl</importfile>
+    <imptext1>Ovde možete da podelite tekst u pojedinačne reči i da kreirate rečenice sa tim rečima.</imptext1>
+    <imptext2>izključena slova (odvojena sa razmakom)</imptext2>
+    <excluded>
+
+
+
+. , ; : ! ? / \ ( ) [ ]</excluded>
+    <importtext>Importiraj tekst fajl</importtext>
+    <options1>Opšte opcije</options1>
+    <options2>Importiraj eksterne reči</options2>
+    <options3>Importiraj tekst</options3>
+    <options4>Informacje</options4>
+    <abouttext>VPodsetite nas na:&lt;br&gt;&lt;a href='http://www.driller-vocabulary.com' target='_blank'&gt;&lt;font color='#4152fb'&gt;www.driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;br&gt;Email:&lt;br&gt;&lt;a href='mailto:support@driller-vocabulary.com'&gt;&lt;font color='#4152fb'&gt;support@driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;/b&gt;</abouttext>
+    <aboutemail>Email za regist.</aboutemail>
+    <aboutcode>Code za regist.</aboutcode>
+    <showcf>Kolona ocene</showcf>
+    <options5>Google Translate</options5>
+    <translatedescription>Prevod pomoću on-line Google Translate. Izaberi te sa kojeg na koji jezik želite da prevodite.
+Kad dodate ili upišete reč, kliknite na zeleni znak da bi reč preveli.</translatedescription>
+    <translatefrom>Sa</translatefrom>
+    <translateto>Na</translateto>
+    <swaprnd>Razmena slučaj</swaprnd>
+  </settings>
+  <tooltips>
+    <show>(F4)</show>
+    <next>(F5)</next>
+    <save>Promenjene reči sačuvati (F6)</save>
+    <add>(F7)</add>
+    <setup>(F8)</setup>
+    <radio1>(F1)</radio1>
+    <radio2>(F2)</radio2>
+    <radio3>(F3)</radio3>
+    <colorpicker>Izaberite boju reči i kliknite na sačuvati.</colorpicker>
+    <text1/>
+    <text2/>
+    <text3>Izgovor</text3>
+    <text4>Kontekst</text4>
+    <maximize>Uvećaj</maximize>
+    <close>Završiti aplikaciju (F12)</close>
+    <showlist>Pokaži listu reči (F9)</showlist>
+    <hidelist>Sakri listu reči (F9)</hidelist>
+    <file/>
+    <filebutton>Izaberi fajl sa rečima</filebutton>
+    <interval/>
+    <random/>
+    <swap/>
+    <language/>
+    <newfile>Kreirati novi fajl</newfile>
+    <showstorage>Otvorite fajl sa rečima</showstorage>
+    <listorder>Izaberite redosled fajlova (drag&amp;drop)</listorder>
+    <custom>Definišite separatore ovde</custom>
+    <importfile>Importirajte reči</importfile>
+    <excluded>Slova importiranog teksta koja trebaju da se ignorišu</excluded>
+    <importtext/>
+    <aboutemail>Molim vas unesite vaš email za registraciju:</aboutemail>
+    <aboutcode>Molim vas unesite vaš code za registraciju:</aboutcode>
+    <eval>Pokaži kolonu ocjene sa rečima</eval>
+    <clsbutton>Sačuvaj i zatvori</clsbutton>
+    <nextskip>Idi na sledeću reč, nebitno od intervala (F10)</nextskip>
+    <ipa>IPA</ipa>
+    <translate>Google Translate</translate>
+    <print>Štampajte kartu</print>
+    <printselect>Selektiraj/deselektiraj sve</printselect>
+    <swaprnd/>
+  <mp3>Creates sound files of selected words for your mp3 player</mp3><translateall>Translates all selected words</translateall><voice>(F11)</voice></tooltips>
+  <alerts>
+    <alert1>Promene su sačuvane...</alert1>
+    <alert2>Promene konfiguracije su sačuvane...</alert2>
+    <alert3>Hoćete da završite aplikaciju?</alert3>
+    <alert4>Unesite reč</alert4>
+    <alert5>Unesite prevod</alert5>
+    <alert6>reč postoji već!</alert6>
+    <alert7>Hoćete sigurno da izbrišete reč?</alert7>
+    <alert8>Fajl je kreiran</alert8>
+    <alert9>Definišite individualne separatore ovde</alert9>
+  <alert10>Do you want to put translation for all selected words?</alert10></alerts>
+  <flag>assets/icons/rs.png</flag>
+</ct>
+<ct>
+  <name>FR</name>
+  <buttons>
+    <show>Montrer</show>
+    <next>Suivant</next>
+    <save>Enregistrer</save>
+    <add>Nouveau</add>
+    <setup>Options</setup>
+    <radio1>JE SAIS</radio1>
+    <radio2>PAS SUR</radio2>
+    <radio3>QUOI ?</radio3>
+    <add2>Modifier</add2>
+    <addtext>Insérer un nouveau mot</addtext>
+    <trayshow>Montrer</trayshow>
+    <trayhide>Cacher</trayhide>
+    <traypause>Pause</traypause>
+    <trayexit>Terminer</trayexit>
+    <nextskip>Suivant Now</nextskip>
+  </buttons>
+  <grid>
+    <col1>Mot</col1>
+    <col2>Traduction</col2>
+    <col3>Prononciation</col3>
+    <col4>Contexte</col4>
+  </grid>
+  <settings>
+    <title>Réglages</title>
+    <file>Fichier actuel</file>
+    <interval>Période (sec)</interval>
+    <random>Aléatoire</random>
+    <swap>Permuter</swap>
+    <language>Langue</language>
+    <newfile>Nouveau</newfile>
+    <opt1>Point-virgule</opt1>
+    <opt2>Tab</opt2>
+    <opt3>Virgule</opt3>
+    <opt4>Mon propre</opt4>
+    <order1>Mot étranger</order1>
+    <order2>Traduction</order2>
+    <order3>Prononciation</order3>
+    <order4>Contexte</order4>
+    <importfile>Importer un fichier</importfile>
+    <imptext1>Couper le texte mot par mot et créer les fichiers de vocabulaire avec les phrases de contexte.</imptext1>
+    <imptext2>Caracteres a éliminer (séparer par un espace)</imptext2>
+    <excluded>
+
+
+
+. , ; : ! ? / \ ( ) [ ]</excluded>
+    <importtext>Importer un fichier texte</importtext>
+    <options1>Options générales</options1>
+    <options2>Importer une liste de mots externes</options2>
+    <options3>Importer un fichier texte</options3>
+    <options4>Info</options4>
+    <abouttext>Nous visiter sur:&lt;br&gt;&lt;a href='http://www.driller-vocabulary.com' target='_blank'&gt;&lt;font color='#4152fb'&gt;www.driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;br&gt;Envoyer un message a:&lt;br&gt;&lt;a href='mailto:support@driller-vocabulary.com'&gt;&lt;font color='#4152fb'&gt;support@driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;/b&gt;</abouttext>
+    <aboutemail>E-mail d'autorisat.:</aboutemail>
+    <aboutcode>Code d'autorisat.:</aboutcode>
+    <showcf>Montrer la colonne avec l'évaluation.</showcf>
+    <options5>Google Translate</options5>
+    <translatedescription>Traduction en ligne avec Google Translate Tool. Sélectionnez les langues entre lesquelles vous sauhaitez traduire.</translatedescription>
+    <translatefrom>De</translatefrom>
+    <translateto>A</translateto>
+    <swaprnd>Permuter au hazard</swaprnd>
+  </settings>
+  <tooltips>
+    <show>(F4)</show>
+    <next>(F5)</next>
+    <save>Enregistrer les modifications du mot (F6)</save>
+    <add>(F7)</add>
+    <setup>(F8)</setup>
+    <radio1>(F1)</radio1>
+    <radio2>(F2)</radio2>
+    <radio3>(F3)</radio3>
+    <colorpicker>Choisir la couleur du mot et appuyer sur le bouton Enregistrer</colorpicker>
+    <text1/>
+    <text2/>
+    <text3>Prononciation</text3>
+    <text4>Contexte</text4>
+    <maximize>Agrandir</maximize>
+    <close>Quitter l'application (F12)</close>
+    <showlist>Montrer la liste de vocabulaire (F9)</showlist>
+    <hidelist>Cacher la liste de vocabulaire (F9)</hidelist>
+    <file/>
+    <filebutton>Choisir le fichier de vocabulaire</filebutton>
+    <interval/>
+    <random/>
+    <swap/>
+    <language/>
+    <newfile>Créer un nouveau fichier</newfile>
+    <showstorage>Ouvrir le dossier de vocabulaire</showstorage>
+    <listorder>Spécifier l'ordre des éléments (drag &amp; drop)</listorder>
+    <custom>Définir le caractere séparateur</custom>
+    <importfile>Importer le fichier de vocabulaire</importfile>
+    <excluded>Caracteres a éliminer du texte pendant l'importation</excluded>
+    <importtext/>
+    <aboutemail>Insérer l'adresse e-mail d'autorisation</aboutemail>
+    <aboutcode>Insérer le code d'autorisation</aboutcode>
+    <eval>Montrer les mots de la colonne d'évaluation</eval>
+    <clsbutton>Enregistrer et fermer</clsbutton>
+    <nextskip>Mot suivant sans intervalle
+ (F10)</nextskip>
+    <ipa>IPA</ipa>
+    <translate>Google Translate</translate>
+    <print>Imprimer les cartes</print>
+    <printselect>Sélectionner/désélectionner</printselect>
+    <swaprnd/>
+  <mp3>Creates sound files of selected words for your mp3 player</mp3><translateall>Translates all selected words</translateall><voice>(F11)</voice></tooltips>
+  <alerts>
+    <alert1>Les modifications ont été enregistrées...</alert1>
+    <alert2>Les changements de  configuration ont été enregistrés...</alert2>
+    <alert3>Voulez-vous quitter l'application ?</alert3>
+    <alert4>Insérer un mot</alert4>
+    <alert5>Insérer une traduction</alert5>
+    <alert6>ce mot existe déja</alert6>
+    <alert7>Voulez-vous vraiment effacer le mot ?</alert7>
+    <alert8>Le fichier a été créé</alert8>
+    <alert9>Définir le caractere séparateur.</alert9>
+  <alert10>Do you want to put translation for all selected words?</alert10></alerts>
+  <flag>assets/icons/fr.png</flag>
+</ct>
+<ct>
+  <name>KR</name>
+  <buttons>
+    <show>??</show>
+    <next>??</next>
+    <save>??</save>
+    <add>? ??</add>
+    <setup>??</setup>
+    <radio1>???</radio1>
+    <radio2>? ???</radio2>
+    <radio3>???</radio3>
+    <add2>????</add2>
+    <addtext>? ?? ??</addtext>
+    <trayshow>? ??</trayshow>
+    <trayhide>???</trayhide>
+    <traypause>?? ??</traypause>
+    <trayexit>???</trayexit>
+    <nextskip>?? Now</nextskip>
+  </buttons>
+  <grid>
+    <col1>??</col1>
+    <col2>??</col2>
+    <col3>??</col3>
+    <col4>??</col4>
+  </grid>
+  <settings>
+    <title>??</title>
+    <file>?? ??</file>
+    <interval>?? ?? ??</interval>
+    <random>??</random>
+    <swap>?-?</swap>
+    <language>?? ??</language>
+    <newfile>? ??</newfile>
+    <opt1>????</opt1>
+    <opt2>?</opt2>
+    <opt3>???</opt3>
+    <opt4>??? ??</opt4>
+    <order1>???</order1>
+    <order2>??</order2>
+    <order3>??</order3>
+    <order4>??</order4>
+    <importfile>?? ????</importfile>
+    <imptext1>???? ??? ??? ?? ??? ??? ???? ????.</imptext1>
+    <imptext2>?? ??(?????? ?? ???)</imptext2>
+    <excluded>
+
+
+
+. , ; : ! ? / \ ( ) [ ]</excluded>
+    <importtext>??? ?? ????</importtext>
+    <options1>??</options1>
+    <options2>?? ?? ????</options2>
+    <options3>?? ??? ??</options3>
+    <options4>About</options4>
+    <abouttext>&lt;a href='http://www.driller-vocabulary.com' target='_blank'&gt;&lt;font color='#4152fb'&gt;www.driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;????? ??????.&lt;br&gt;???:&lt;br&gt;&lt;a href='mailto:support@driller-vocabulary.com'&gt;&lt;font color='#4152fb'&gt;support@driller-vocabulary.com&lt;/font&gt;&lt;/a&gt;&lt;/b&gt;</abouttext>
+    <aboutemail>??? ??</aboutemail>
+    <aboutcode>?? ??</aboutcode>
+    <showcf>?? ??' ? ?? ??</showcf>
+    <options5>Google Translate</options5>
+    <translatedescription>? ????? ?? ??? ??? ?? ?????. ??? ??? ??? ???. ??? ????? ?????? ???? ?? ??? ????.</translatedescription>
+    <translatefrom>??</translatefrom>
+    <translateto>??</translateto>
+    <swaprnd>?-? ??</swaprnd>
+  </settings>
+  <tooltips>
+    <show>(F4)</show>
+    <next>(F5)</next>
+    <save>?? ?? (F6)</save>
+    <add>(F7)</add>
+    <setup>(F8)</setup>
+    <radio1>(F1)</radio1>
+    <radio2>(F2)</radio2>
+    <radio3>(F3)</radio3>
+    <colorpicker>???? ???? ?? ??? ????</colorpicker>
+    <text1/>
+    <text2/>
+    <text3>??</text3>
+    <text4>??</text4>
+    <maximize>???</maximize>
+    <close>??? (F12)</close>
+    <showlist>?? ?? ?? (F9)</showlist>
+    <hidelist>?? ?? ??? (F9)</hidelist>
+    <file/>
+    <filebutton>??? ??</filebutton>
+    <interval/>
+    <random/>
+    <swap/>
+    <language/>
+    <newfile>? ?? ???</newfile>
+    <showstorage>?? ?? ??</showstorage>
+    <listorder>??? ?? ??(???? ????? ???)</listorder>
+    <custom>?? ??</custom>
+    <importfile>?? ????</importfile>
+    <excluded>??? ????? ??? ??</excluded>
+    <importtext/>
+    <aboutemail>??? ??? ??? ?????</aboutemail>
+    <aboutcode>????? ?????</aboutcode>
+    <eval>?? ??' ? ?? ??</eval>
+    <clsbutton>??&amp;??</clsbutton>
+    <nextskip>Next word without interval (F10)</nextskip>
+    <ipa>IPA</ipa>
+    <translate>Google Translate</translate>
+    <print>?? ?? ????</print>
+    <printselect>?? ?? ?? ??/??</printselect>
+    <swaprnd/>
+  <mp3>Creates sound files of selected words for your mp3 player</mp3><translateall>Translates all selected words</translateall><voice>(F11)</voice></tooltips>
+  <alerts>
+    <alert1>??? ??? ???????.</alert1>
+    <alert2>?? ??? ??? ???????.</alert2>
+    <alert3>?????????</alert3>
+    <alert4>?? ??</alert4>
+    <alert5>????</alert5>
+    <alert6>??? ?? ?????.</alert6>
+    <alert7>??? ??? ????????</alert7>
+    <alert8>? ?? ?? ?</alert8>
+    <alert9>?? ?? ??? ??</alert9>
+  <alert10>Do you want to put translation for all selected words?</alert10></alerts>
+  <flag>assets/icons/kr.png</flag>
+</ct>
+<IPA><char>?</char><char>?</char><char>?</char><char>a</char><char>?</char><char>?</char><char>ß</char><char>?</char><char>?</char><char>ç</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>g</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>h</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>o</char><char>?</char><char>?</char><char>?</char><char>o</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>?</char><char>|</char><char>?</char><char>?</char></IPA><translator>
+<lang><ct>Afrikaans</ct><code>af</code></lang><lang><ct>Albanian</ct><code>sq</code></lang>
+<lang><ct>Arabic</ct><code>ar</code></lang><lang><ct>Belarusian</ct><code>be</code></lang><lang><ct>Bulgarian</ct><code>bg</code></lang><lang><ct>Catalan</ct><code>ca</code></lang><lang><ct>Chinese</ct><code>zh-CN</code></lang><lang><ct>Croatian</ct><code>hr</code></lang><lang><ct>Czech</ct><code>cs</code></lang><lang><ct>Danish</ct><code>da</code></lang>
+<lang><ct>Dutch</ct><code>nl</code></lang><lang><ct>English</ct><code>en</code></lang><lang><ct>Estonian</ct><code>et</code></lang><lang><ct>Filipino</ct><code>tl</code></lang><lang><ct>Finnish</ct><code>fi</code></lang><lang><ct>French</ct><code>fr</code></lang><lang><ct>Galician</ct><code>gl</code></lang><lang><ct>German</ct><code>de</code></lang>
+<lang><ct>Greek</ct><code>el</code></lang><lang><ct>Haitian Creole</ct><code>ht</code></lang><lang><ct>Hebrew</ct><code>iw</code></lang><lang><ct>Hindi</ct><code>hi</code></lang><lang><ct>Hungarian</ct><code>hu</code></lang><lang><ct>Iceland</ct><code>ic</code></lang><lang><ct>Indonesian</ct><code>id</code></lang><lang><ct>Irish</ct><code>ga</code></lang><lang><ct>Italian</ct><code>it</code></lang><lang><ct>Japanese</ct><code>ja</code></lang>
+<lang><ct>Korean</ct><code>ko</code></lang><lang><ct>Latvian</ct><code>lv</code></lang><lang><ct>Lithuanian</ct><code>lt</code></lang><lang><ct>Macedonian</ct><code>mk</code></lang><lang><ct>Malay</ct><code>ms</code></lang><lang><ct>Maltese</ct><code>mt</code></lang><lang><ct>Norwegian</ct><code>no</code></lang><lang><ct>Persian</ct><code>fa</code></lang>
+<lang><ct>Polish</ct><code>pl</code></lang><lang><ct>Portuguese</ct><code>pt</code></lang><lang><ct>Romanian</ct><code>ro</code></lang><lang><ct>Russian</ct><code>ru</code></lang><lang><ct>Serbian</ct><code>sr</code></lang><lang><ct>Slovak</ct><code>sk</code></lang><lang><ct>Slovenian</ct><code>sl</code></lang><lang><ct>Spanish</ct><code>es</code></lang>
+<lang><ct>Swahili</ct><code>sw</code></lang><lang><ct>Swedish</ct><code>sv</code></lang><lang><ct>Thai</ct><code>th</code></lang><lang><ct>Turkish</ct><code>tr</code></lang><lang><ct>Ukrainian</ct><code>uk</code></lang><lang><ct>Vietnamese</ct><code>vi</code></lang><lang><ct>Welsh</ct><code>cy</code></lang><lang><ct>Yiddish</ct><code>yi</code></lang>
+
+
+<ctfrom>en</ctfrom><ctto>cs</ctto>
+
+</translator><hotkeys><key><color>0</color><control>0</control><key>r</key></key><key><color>0</color><control>0</control><key>e</key></key><key><color>0</color><control>0</control><key>s</key></key><key><color>0</color><control>0</control><key>d</key></key><key><color>0</color><control>0</control><key>u</key></key><key><color>0</color><control>0</control><key>v</key></key><key><color>0</color><control>0</control><key>w</key></key><key><color>0</color><control>0</control><key>x</key></key><key><color>0</color><control>0</control><key>y</key></key><key><color>0</color><control>0</control><key>z</key></key></hotkeys>
+<themes><theme><name>wrinkled paper</name><image>assets/skins/skin_paper.jpg</image><preview>assets/skins/skin_paper.jpg</preview><theme_color>0x646464</theme_color><status_color>white</status_color></theme><theme><name>pink paper</name><image>assets/skins/skin_paper2.jpg</image><preview>assets/skins/skin_paper.jpg</preview><theme_color>0xC16800</theme_color><status_color>black</status_color></theme><theme><name>ginkgo paper</name><image>assets/skins/skin_paper3.jpg</image><preview>assets/skins/skin_paper.jpg</preview><theme_color>0x646464</theme_color><status_color>white</status_color></theme><theme><name>celestial paper</name><image>assets/skins/skin_paper4.jpg</image><preview>assets/skins/skin_paper.jpg</preview><theme_color>0x646464</theme_color><status_color>black</status_color></theme><theme><name>white paper</name><image>assets/skins/skin_paper6.jpg</image><preview>assets/skins/skin_paper.jpg</preview><theme_color>0x646464</theme_color><status_color>black</status_color></theme>
+<theme><name>sand</name><image>assets/skins/skin_sand.jpg</image><preview>assets/skins/skin_paper.jpg</preview><theme_color>0x646464</theme_color><status_color>white</status_color></theme><theme><name>tic tac toe</name><image>assets/skins/skin_squares.jpg</image><preview>assets/skins/skin_paper.jpg</preview><theme_color>0x646464</theme_color><status_color>black</status_color></theme><theme><name>stripes</name><image>assets/skins/skin_stripes.jpg</image><preview>assets/skins/skin_paper.jpg</preview><theme_color>0x646464</theme_color><status_color>white</status_color></theme><theme><name>textile</name><image>assets/skins/skin_textile.jpg</image><preview>assets/skins/skin_paper.jpg</preview><theme_color>0x646464</theme_color><status_color>black</status_color></theme></themes></root>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

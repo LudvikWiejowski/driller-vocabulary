@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="262" height="394" title="Settings" showCloseButton="true" close="fSaveSettings()" creationComplete="fInitSettings()" borderColor="{Application.application.mySkinColor}">
+	<mx:Script>
+		<![CDATA[
+			import mx.core.Application;
+		]]>
+	</mx:Script>
+	<mx:Script source="CodeSettings.as"/>
+	<mx:Accordion x="0" y="0" width="242" height="354" id="accOptions" creationPolicy="all">
+		<mx:Canvas label="General settings" width="100%" height="100%" id="accOptions_1">
+			<mx:CheckBox x="216" y="88" id="chkRnd" toolTip="Check me on for random selection"/>
+			<mx:TextInput x="111" y="60" width="71" borderStyle="solid" borderColor="#000000" toolTip="Interval in sec" id="txtInterval"/>
+			<mx:TextInput x="10" y="18" width="114" borderStyle="solid" borderColor="#000000" toolTip="{txtPath.text}" id="txtPath" textAlign="right" enabled="false"/>
+			<mx:Label x="111" y="43" text="Interval:" width="72" textAlign="left" id="lblInterval"/>
+			<mx:Label x="155" y="88" text="rnd:" textAlign="right" id="lblRandom" width="57"/>
+			<mx:CheckBox x="216" y="124" id="chkSwapRnd" toolTip="Check me on for random swap"/>
+			<mx:Label x="69" y="124" text="Swap randomly:" textAlign="right" id="lblSwapRnd" width="143"/>
+			<mx:CheckBox x="216" y="106" id="chkSwap" toolTip="Check me on for swaping word with translation"/>
+			<mx:Label x="144" y="106" text="Swap:" width="68" textAlign="right" id="lblSwap"/>
+			<mx:Label x="40" y="200" text="Mic:" width="29" textAlign="left" id="lblMic"/>
+			<mx:Label x="10" y="1" text="File:" width="146" textAlign="left" id="lblFile"/>
+			<mx:Label x="10" y="43" text="Language:" width="93" textAlign="left" id="lblLang"/>
+			<mx:ComboBox x="10" y="60" width="93" id="cmbLang" dataProvider="{Application.application.myXMLconf.ct}" labelField="name" itemRenderer="Flag" rowCount="4"></mx:ComboBox>
+			<mx:Button x="148" y="17" label="New" toolTip="Creates new file" click="fNewFile()" id="cmdNewFile" buttonMode="true" width="82"/>
+			<mx:Button x="190" y="59" label="..." id="cmdOpenStorage1" click="fOpenStorageFolder()" toolTip="Open vocabulary folder" buttonMode="true" visible="true"/>
+			<mx:Button x="128" y="17" label="." id="cmdPath" click="fSelectFile()" toolTip="Selects vocabulary file" buttonMode="true" width="16"/>
+			<mx:CheckBox x="216" y="142" id="chkEval"/>
+			<mx:Label x="18" y="142" text="Show evaluation column:" textAlign="right" id="lblEval" width="194"/>
+			<mx:CheckBox x="216" y="160" id="chkPronounce"/>
+			<mx:Label x="5" y="160" text="Pronounce displayed word:" textAlign="right" id="lblPronounce" width="207"/>
+			<mx:CheckBox x="216" y="178" id="chkWriteMode"/>
+			<mx:Label x="132" y="178" text="Write mode:" textAlign="right" id="lblWriteMode" width="80"/>
+			<mx:ComboBox x="40" y="216" width="190" id="cmbMic" dataProvider="{microphoneList}"></mx:ComboBox>
+			<mx:ColorPicker x="10" y="216" id="colorPicker" selectedColor="#FFFFFF"/>
+		</mx:Canvas>
+		<mx:Canvas label="Google Translate" width="100%" height="100%" id="accOptions_5">
+			<mx:ComboBox x="70" y="116" id="cmbFrom" labelField="ct" rowCount="7" dataProvider="{Application.application.myXMLconf.translator.lang}">			
+			</mx:ComboBox>
+			<mx:ComboBox x="70" y="146" id="cmbTo" labelField="ct" rowCount="7" dataProvider="{Application.application.myXMLconf.translator.lang}">	
+			</mx:ComboBox>
+			<mx:Label x="10" y="118" text="From" width="52" id="lblFrom"/>
+			<mx:Label x="10" y="144" text="To" width="52" id="lblTo"/>
+			<mx:TextArea x="10" y="10" width="230" borderStyle="none" height="100" id="lblTranslateDescription" editable="false">
+				<mx:text>Translation via on-line Google Translate tool. Choose from which language to which language to translate. When adding or editting a new word, press green side button of translation field, translation will be made.</mx:text>
+			</mx:TextArea>
+		</mx:Canvas>
+		<mx:Canvas label="Hot Keys" width="100%" height="100%" id="accOptions_6">
+			<mx:DataGrid x="0" y="0" width="240" height="248" id="dgHotKeys" resizableColumns="false" showHeaders="false" dataProvider="{Application.application.myXMLconf.hotkeys.key}" editable="true">
+				<mx:columns>
+					<mx:DataGridColumn headerText="" dataField="" width="35" itemRenderer="CellColor" editable="false"/>
+					<mx:DataGridColumn headerText="" dataField="" width="90" itemRenderer="CellControl" editable="false"/>
+					<mx:DataGridColumn headerText="" dataField="" width="90" itemRenderer="CellText" editable="false"/>
+				</mx:columns>
+			</mx:DataGrid>
+		</mx:Canvas>
+		<mx:Canvas label="Theme" width="100%" height="100%">
+			<mx:ComboBox x="10" y="10" width="220" id="cmbTheme" dataProvider="{Application.application.myXMLconf.themes.theme}" labelField="name" rowCount="9" change="fComboTheme()"></mx:ComboBox>
+			<mx:Canvas x="10" y="40" width="220" height="130" id="cThemeColor" backgroundColor="#B61515">
+				<mx:Image x="10" y="10" width="200" height="110" id="cTheme"/>
+			</mx:Canvas>
+		</mx:Canvas>
+		<mx:Canvas label="About" width="100%" height="100%" id="accOptions_4">
+			<mx:Image source="assets/icons/Driller32.png" x="100" y="4"/>
+			<mx:Text htmlText="{Application.application.myXMLlang.settings.abouttext}" width="212" height="65" textAlign="center" fontWeight="bold" fontSize="10" x="10" y="65" id="txtAboutText"/>
+			<mx:TextInput x="10" y="149" width="102" borderStyle="solid" id="txtAboutEmail" toolTip="Please, enter your registration email" change="fChangeCode()" enabled="{Application.application.myRegistrationStatus!=RegistrationStatus.REGISTRATED}"/>
+			<mx:TextInput x="120" y="149" width="102" borderStyle="solid" id="txtAboutCode" toolTip="Please, enter your registration code" change="fChangeCode()" enabled="{Application.application.myRegistrationStatus!=RegistrationStatus.REGISTRATED}" displayAsPassword="true"/>
+			<mx:Label x="10" y="132" text="Registr. email:" width="102" id="lblAboutEmail"/>
+			<mx:Label x="120" y="132" text="Registr. code:" width="102" id="lblAboutCode"/>
+			<mx:Label x="10" y="39" width="212" fontSize="14" fontWeight="bold" fontFamily="Arial" id="lblStatus" textAlign="center" text="{Application.application.myRegistrationStatus}"/>
+		</mx:Canvas>		
+	</mx:Accordion>
+</mx:TitleWindow>

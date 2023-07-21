@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="174" height="204" title="Export" close="fCloseMe()" showCloseButton="true" creationComplete="fInitMessage()" borderColor="{Application.application.mySkinColor}">
+	<mx:Script>
+		<![CDATA[
+			import mx.managers.PopUpManager;
+			import mx.core.Application;
+			import mx.controls.Alert;
+			import mx.collections.ArrayCollection;
+			private var fileSave:File;
+			//private var fr:FileReference;
+			
+			[Bindable]
+            private var ext:ArrayCollection = new ArrayCollection(
+                [ {label:"txt", data:1}, 
+                  {label:"csv", data:2} ]);
+			
+			private function fInitMessage():void{
+				with(Application.application.myXMLlang.settings){
+					semicolon.label=opt1;
+					tab.label=opt2;
+					comma.label=opt3;
+					custom.label=opt4;
+				}
+				with(Application.application.myXMLconf){
+					rgDelimiters.selectedValue=importdelimiteroption;				
+				}
+			}
+			private function fCloseMe():void{
+				try{		
+					Application.application.myXMLconf.importdelimiteroption=rgDelimiters.selectedValue;
+					
+					Application.application.fSaveXMLconf();
+					
+					PopUpManager.removePopUp(this);
+					
+				}catch (error:Error){
+					Alert.show("Failed:"+error.message);
+				}
+			}
+			private function fExportFile():void {
+				fileSave = File.desktopDirectory;
+				fileSave.browseForDirectory("Save to");
+				fileSave.addEventListener(Event.SELECT, fSaveExport);					
+			}
+			private function fSaveExport(event:Event):void {
+				var myDelimiter:String;
+				var newFile:File=new File();
+				newFile=fileSave.resolvePath("Driller_Export."+cbExt.text);	
+				
+				switch(rgDelimiters.selection.id){
+					case "semicolon":
+						myDelimiter=";";
+						break;
+					case "tab":
+						myDelimiter="\t";
+						break;
+					case "commna":
+						myDelimiter=",";
+						break;
+					case "custom":
+						if(txtCustom.text.length!=0){
+							myDelimiter=txtCustom.text;
+						}else{
+							Alert.show(Application.application.myXMLlang.alerts.alert9);
+							return;
+						}
+						break;
+				}				
+				
+				var fileStream:FileStream = new FileStream();
+				fileStream.open(newFile, FileMode.WRITE);
+				
+				var words:XMLList;
+				words=Application.application.myXML.wordList.word.(SL=="true" && EN!="");
+				
+				for(var i:int=0;i<words.length();i++){
+					var temp:String;
+					
+					temp=words[i].EN + myDelimiter + words[i].CZ + myDelimiter + words[i].PR + myDelimiter+words[i].CX;
+					temp+="\r\n";
+					fileStream.writeUTFBytes(temp);
+				}
+				
+				fileStream.close();
+				
+				fCloseMe();
+			}
+		]]>
+	</mx:Script>
+	<mx:Button x="80" y="132" label="Export" id="cmdExport" toolTip="" click="fExportFile()" buttonMode="true"/>
+	<mx:RadioButtonGroup id="rgDelimiters"/>
+	<mx:RadioButton id="semicolon" x="10" y="10" label="Semicolon" groupName="rgDelimiters" selected="true" value="1"/>
+	<mx:RadioButton id="tab" x="10" y="36" label="Tab" groupName="rgDelimiters" value="2"/>
+	<mx:RadioButton id="comma" x="10" y="63" label="Comma" groupName="rgDelimiters" value="3"/>
+	<mx:RadioButton id="custom" x="10" y="89" label="Custom" groupName="rgDelimiters" value="4" click="txtCustom.setFocus()"/>
+	<mx:TextInput x="86" y="89" width="20" borderStyle="solid" id="txtCustom" toolTip="Define your delimiter here" visible="{custom.selected}"/>
+	<mx:ComboBox x="10" y="132" width="62" id="cbExt" dataProvider="{ext}" selectedIndex="0"></mx:ComboBox>
+</mx:TitleWindow>

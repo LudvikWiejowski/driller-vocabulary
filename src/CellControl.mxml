@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" horizontalAlign="center">
+	<mx:Script>
+		<![CDATA[
+			import mx.core.Application;
+			import mx.collections.ArrayCollection;
+
+			[Bindable]
+			private var controlKeys:ArrayCollection = new ArrayCollection(
+			    [ {label:"Ctrl", data:0}, 
+			      {label:"Shift", data:1}, 
+			      {label:"Alt", data:2} ]);	
+		]]>
+	</mx:Script>
+	<mx:ComboBox id="cbControl" selectedIndex="{data.control}" dataProvider="{controlKeys}" change="{data.control=cbControl.selectedItem.data}" buttonMode="true"></mx:ComboBox>
+</mx:HBox>

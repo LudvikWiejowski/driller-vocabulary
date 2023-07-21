@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="486" height="394" title="Import" showCloseButton="true" close="fSaveSettings()" creationComplete="fInitSettings()" borderColor="{Application.application.mySkinColor}" backgroundColor="#E2E2E2">
+	<mx:Script>
+		<![CDATA[
+			import mx.core.Application;
+		]]>
+	</mx:Script>
+	<mx:Script source="CodeImportTxt.as"/>
+	<mx:Script source="CodeShared.as"/>
+	<mx:HTTPService id="httpThemes" useProxy="false" method="POST" url="{Application.application.serverURL+'/driller_themes.php'}" fault="{fThemesFault(event)}" result="{fThemesResult(event)}" showBusyCursor="true">
+        <mx:request xmlns="">
+            <action>{"themes"}</action>
+            <lang_from>{Application.application.myXMLconf.translator.ctfrom}</lang_from>
+            <lang_to>{Application.application.myXMLconf.translator.ctto}</lang_to>
+        </mx:request>
+	</mx:HTTPService>
+	<mx:HTTPService id="httpVocabulary" useProxy="false" method="POST" url="{Application.application.serverURL+'/driller_themes.php'}" fault="{fThemesFault(event)}" result="{fThemesResult(event)}" showBusyCursor="true">
+        <mx:request xmlns="">
+            <action>{"vocabulary"}</action>
+            <lang_from>{Application.application.myXMLconf.translator.ctfrom}</lang_from>
+            <lang_to>{Application.application.myXMLconf.translator.ctto}</lang_to>
+            <theme>{dgThemes.selectedItem.theme}</theme>
+        </mx:request>
+	</mx:HTTPService>		
+	<mx:Accordion x="0" y="0" width="466" height="275" id="accOptions" creationPolicy="all" change="{getEnabling()}">
+		<mx:Canvas label="Import External Vocabulary" width="100%" height="100%" id="accOptions_2">
+			<mx:RadioButtonGroup id="rgDelimiters"/>
+			<mx:RadioButton id="semicolon" x="10" y="10" label="Semicolon" groupName="rgDelimiters" value="1"/>
+			<mx:RadioButton id="tab" x="10" y="36" label="Tab" groupName="rgDelimiters" value="2"/>
+			<mx:RadioButton id="comma" x="10" y="62" label="Comma" groupName="rgDelimiters" value="3"/>
+			<mx:RadioButton id="custom" x="10" y="88" label="Custom" groupName="rgDelimiters" click="txtCustom.setFocus()" value="4"/>
+			<mx:List x="123" y="9" width="99" height="101" dragEnabled="true" dropEnabled="true" dragMoveEnabled="true" fontWeight="bold" toolTip="Set order of your file (drag&amp;drop)" id="lsOrder">
+		        <!--<mx:Object label="{Application.application.myXMLlang.settings.order1}" data="en" id="en"/>
+		        <mx:Object label="{Application.application.myXMLlang.settings.order2}" data="cz" id="cz"/>
+		        <mx:Object label="{Application.application.myXMLlang.settings.order3}" data="pr" id="pr"/>
+		        <mx:Object label="{Application.application.myXMLlang.settings.order4}" data="cx" id="cx"/>-->
+			</mx:List>
+			<mx:TextInput x="86" y="88" width="20" borderStyle="solid" id="txtCustom" toolTip="Define your delimiter here" visible="{custom.selected}"/>
+			<mx:Button x="182" y="131" label="..." id="cmdOpenStorage2" click="fOpenStorageFolder()" toolTip="Open vocabulary folder" buttonMode="true" visible="false"/>
+		</mx:Canvas>
+		<mx:Canvas label="Import Text" width="100%" height="100%" id="accOptions_3">
+			<mx:TextArea x="10" y="10" width="212" borderStyle="none" height="54" id="lblDescription" editable="false">
+				<mx:text>Parses text file to words and creates vocabulary file with context sentences</mx:text>
+			</mx:TextArea>
+			<mx:TextInput x="10" y="98" width="212" borderStyle="solid" text=". , ; : ! ? / \ ( ) [ ]" id="txtExcluded"/>
+			<mx:TextArea x="10" y="64" id="lblExcluded" text="Excluded characters (delimited by space):" width="212" height="34" borderStyle="none" editable="false"/>
+		</mx:Canvas>
+		<mx:Canvas label="Import Predefined Vocabulary" width="100%" height="100%" id="accOptions_7">
+			<mx:HDividedBox x="0" y="0" height="211" width="100%" backgroundColor="#E2E2E2">
+				<mx:DataGrid change="{httpVocabulary.send()}" width="174" height="211" id="dgThemes" resizableColumns="false" showHeaders="false" dataProvider="{httpThemes.lastResult.records.record}" editable="true" x="0">
+					<mx:columns>
+						<mx:DataGridColumn headerText="" dataField="theme" width="100" editable="false"/>
+						<mx:DataGridColumn headerText="" dataField="lang_to" width="20" editable="false"/>
+					</mx:columns>
+				</mx:DataGrid>
+				<mx:DataGrid width="216" height="211" id="dgVocabulary" resizableColumns="false" showHeaders="false" dataProvider="{httpVocabulary.lastResult.records.record}" editable="true" x="220">
+					<mx:columns>
+						<mx:DataGridColumn headerText="" dataField="word" width="100" editable="false"/>
+						<mx:DataGridColumn headerText="" dataField="translation" width="100" editable="false"/>
+					</mx:columns>
+				</mx:DataGrid>
+			</mx:HDividedBox>
+
+		</mx:Canvas>
+	</mx:Accordion>
+	<mx:RadioButtonGroup id="rbGroup1"/>
+	<mx:RadioButton x="10" y="280" label="Create new file only" groupName="rbGroup1" id="rb1" value="1"/>
+	<mx:RadioButton x="10" y="301" label="Create new file &amp; open in Driller" groupName="rbGroup1" id="rb2" value="2"/>
+	<mx:RadioButton x="10" y="322" label="Append to active file" groupName="rbGroup1" id="rb3" value="3"/>
+	<mx:Button x="389" y="322" label="Import" id="cmdImport" click="fImport()" buttonMode="true"/>
+</mx:TitleWindow>
